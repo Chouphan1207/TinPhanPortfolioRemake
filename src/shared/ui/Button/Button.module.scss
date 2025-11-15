@@ -1,0 +1,149 @@
+.button{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    transition: all 0.2s linear;
+    color: var(--black);
+    outline: none;
+}
+
+.primary{
+    background-color: var(--primary-color);
+    color: var(--white);
+
+    svg{
+        fill: var(--white);
+    }
+    &:hover{
+        background-color: var(--primary-color-dark);
+    }
+}
+
+.secondary{
+    background-color: var(--primary-color-light);
+    border: 1px solid var(--primary-color-light);
+
+    &:hover{
+        border-color: 1px solid var(--primary-color-light);
+    }
+}
+
+.teriary{
+    background-color: var(--white);
+    border: 1px solid var(--gray-100);
+
+    &:hover{
+        background-color: var(--gray-50);
+        border-color: var(--gray-200);
+    }
+}
+
+.outline{
+    background-color: white;
+    border: 1px solid var(--primary-color);
+
+    &:hover{
+        background-color: var(--primary-color-light);
+        border-color: var(--primary-color-dark);
+    }
+}
+
+.ghost{
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    font-weight: 500;
+    &:hover{
+        background-color: var(--gray-50);
+    }
+}
+
+.disabled{
+    color: var(--gray-400);
+    background-color: var(--gray-100);
+    pointer-events: none;
+
+    svg{
+        fill: var(--gray-400);
+    }
+
+    &.disabled{
+        border-color: var(--gray-200);
+    }
+}
+
+.pill{
+    border-radius: 39px;
+}
+
+.circle{
+    border-radius: 100%;
+    aspect-ratio: 1px;
+}
+
+.xs{
+    padding: 8px 16px;
+    font: var(--font-xs);
+
+    svg{
+        width: 16px;
+        height: 16px;
+    }
+
+    &.circle {
+        padding: 8px;
+    }
+}
+
+.sm{
+    padding: 10px 20px;
+    font: var(--font-s);
+
+    svg{
+        width: 20px;
+        height: 20px;
+    }
+
+    &.circle {
+        padding: 10px;
+    }
+}
+
+.md{
+    padding: 12px 24px;
+    font: var(--font-m);
+
+    svg{
+        width: 20px;
+        height: 20px;
+    }
+
+    &.circle {
+        padding: 12px;
+    }
+}
+
+.lg{
+    padding: 16px 32px;
+    font: var(--font-base);
+
+    svg{
+        width: 24px;
+        height: 24px;
+    }
+
+    &.circle {
+        padding: 14px;
+    }
+}
+
+.xs,
+.sm,
+.md,
+.lg{
+    font-weight: 600;
+}
