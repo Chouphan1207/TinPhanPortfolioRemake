@@ -4,7 +4,7 @@ import {
   ThemeContext,
   type ThemeType,
 } from "@/shared/config/theme/ThemeContext";
-import { use, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 interface ThemeProviderProps {
   children: React.ReactNode;
@@ -17,7 +17,7 @@ export const ThemeProvider = ({ children }: ThemeProviderProps) => {
   const [theme, setTheme] = useState<ThemeType>(defaultTheme);
 
   useEffect(() => {
-    document.body.className = `${theme}`;
+    document.body.className = theme;
     localStorage.setItem(LOCAL_STORAGE_THEME_KEY, theme);
   }, [theme]);
 

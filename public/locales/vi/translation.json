@@ -1,4 +1,42 @@
 {
-  "hello": "Xin chào!",
-  "welcome": "Chào mừng đến với Guitar Store"
+  "header": {
+    "searchBy": "Tìm kiếm theo",
+    "cart": "Giỏ hàng",
+    "login": "Đăng nhập"
+  },
+  "footer": {
+    "about": "Giới thiệu",
+    "aboutUs": "Về chúng tôi",
+    "ourBranches": "Chi nhánh",
+    "changelog": "Nhật ký thay đổi",
+    "quickLinks": "Liên kết nhanh",
+    "faqs": "Câu hỏi thường gặp",
+    "recipes": "Công thức",
+    "contactUs": "Liên hệ",
+    "helpSupport": "Hỗ trợ",
+    "termsOfService": "Điều khoản dịch vụ",
+    "privacyPolicy": "Chính sách bảo mật",
+    "security": "Bảo mật",
+    "company": "Công ty",
+    "blog": "Blog",
+    "contact": "Liên hệ",
+    "social": "Mạng xã hội",
+    "facebook": "Facebook",
+    "instagram": "Instagram",
+    "twitter": "Twitter",
+    "copyright": "Bản quyền © {{year}} {{company}}"
+  },
+  "pageLoader": {
+    "loading": "   Đang tải..."
+  },
+  "pageError":{
+    "title": "Đã xảy ra sự cố",
+    "description": "Xin lỗi, đã xảy ra lỗi bất ngờ. Vui lòng làm mới trang hoặc quay lại sau",
+    "reload": "Thử lại"
+  },
+    "notFound":{
+    "title": "Đã xảy ra sự cố",
+    "description": "Xin lỗi, trang này không tồn tại. Vui lòng quay lại trang trước",
+    "goBack":"Quay lại"
+  }
 }

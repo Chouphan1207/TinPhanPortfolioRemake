@@ -1,12 +1,23 @@
-import { Route } from "react-router";
+import { Routes, Route } from "react-router-dom";
 import { routeConfig } from "../routerConfig";
+import { Suspense } from "react";
+
+import { PageLoader } from "@/widgets/PageLoader";
 
 export const AppRouter = () => {
   return (
-    <Route>
+    <Routes>
       {routeConfig.map(({ path, element }) => (
-        <Route key={path as string} element={element} />
+        <Route
+          key={path}
+          path={path}
+          element={
+            <Suspense key={path} fallback={<PageLoader />}>
+              {element}
+            </Suspense>
+          }
+        />
       ))}
-    </Route>
+    </Routes>
   );
 };

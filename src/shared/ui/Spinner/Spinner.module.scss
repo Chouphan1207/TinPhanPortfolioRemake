@@ -1,0 +1,48 @@
+:root {
+  --primary-color: #0FA3B1; // customize your loader color
+}
+
+.spinner {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  // base bar styles
+  width: 1em;               // fatter bar
+  height: 1.5em;            // slightly taller for balance
+  background: var(--primary-color);
+  display: inline-block;
+  transform-origin: bottom center;
+  animation: loader 1.2s infinite ease-in-out 0.2s;
+
+  &::before,
+  &::after {
+    content: '';
+    width: 1em;             // fatter bar
+    height: 2em;
+    background: var(--primary-color);
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    transform-origin: bottom center;
+  }
+
+  &::before {
+    left: -1.4em;           // more spacing since bars are wider
+    animation: loader 1.2s infinite ease-in-out;
+  }
+
+  &::after {
+    left: 1.4em;            // more spacing since bars are wider
+    animation: loader 1.2s infinite ease-in-out 0.4s;
+  }
+}
+
+@keyframes loader {
+  0%, 100% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(1.5);
+  }
+}

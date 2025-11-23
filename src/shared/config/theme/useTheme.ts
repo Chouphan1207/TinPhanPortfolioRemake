@@ -8,11 +8,20 @@ interface useThemeReturn {
 }
 
 export const useTheme = (): useThemeReturn => {
-    const{ theme, setTheme } =  useContext(ThemeContext);
+  const { theme, setTheme } = useContext(ThemeContext);
 
-    const toggleTheme = () => {
-        const newTheme = theme === Theme.NEUTRAL ? Theme.CALM ? Theme.HEAVY: Theme.NEUTRAL : Theme.NEUTRAL;
-        setTheme?.(newTheme);
-        localStorage.setItem(LOCAL_STORAGE_THEME_KEY, newTheme);};
-    return { theme, toggleTheme};
+  const toggleTheme = () => {
+    const cycle = {
+      [Theme.NEUTRAL]: Theme.CALM,
+      [Theme.CALM]: Theme.HEAVY,
+      [Theme.HEAVY]: Theme.NEUTRAL,
     };
+
+    const newTheme = cycle[theme];
+
+    setTheme?.(newTheme);
+    localStorage.setItem(LOCAL_STORAGE_THEME_KEY, newTheme);
+  };
+
+  return { theme, toggleTheme };
+};

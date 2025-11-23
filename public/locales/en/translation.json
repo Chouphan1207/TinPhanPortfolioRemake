@@ -1,4 +1,42 @@
 {
-  "hello": "Hello!",
-  "welcome": "Welcome to Guitar Store"
+  "header":{
+    "searchBy": "Search by",
+    "cart": "Cart",
+    "login": "Login"
+  },
+  "footer":{
+    "about": "About",
+    "aboutUs": "About Us",
+    "ourBranches": "Our Branches",
+    "changelog": "Changelog",
+    "quickLinks": "Quick Links",
+    "faqs": "FAQs",
+    "recipes": "Recipes",
+    "contactUs": "Contact Us",
+    "helpSupport": "Help & Support",
+    "termsOfService": "Terms of Service",
+    "privacyPolicy": "Privacy Policy",
+    "security": "Security",
+    "company": "Company",
+    "blog": "Blog",
+    "contact": "Contact",
+    "social": "Social",
+    "facebook": "Facebook",
+    "instagram": "Instagram",
+    "twitter": "Twitter",
+    "copyright": "All rights reserved © {{year}} {{company}}"
+  },
+  "pageLoader": {
+    "loading": "   Loading..."
+  },
+  "pageError":{
+    "title": "Something went wrong",
+    "description": "Sorry for unexpected error occurred. Please refresh the page or come back later",
+    "reload":"Try again"
+  },
+    "notFound":{
+    "title": "Something went wrong",
+    "description": "Sorry for unexpected error occurred. Please refresh the page or come back later",
+    "goBack":"Go Back"
+  }
 }

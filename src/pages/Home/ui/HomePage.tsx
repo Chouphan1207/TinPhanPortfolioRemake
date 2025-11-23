@@ -1,11 +1,13 @@
-import { Link } from "react-router";
+import styles from "./HomePage.module.scss";
+import { Header } from "@/widgets/Header";
+import { Footer } from "@/widgets/Footer";
 
 const HomePage = () => {
   return (
-    <>
-      HomePage
-      <Link to={"/login"}>Login page</Link>
-    </>
+    <div className={styles.pageWrapper}>
+      <Header />
+      <Footer />
+    </div>
   );
 };
 
