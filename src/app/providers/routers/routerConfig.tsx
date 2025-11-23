@@ -16,6 +16,6 @@ export const routeConfig: RouteProps[] = [
   },
   {
     path: routePaths[AppRoutes.NOT_FOUND],
-    element: <div>not</div>,
+    element: <>Not</>,
   },
 ];
