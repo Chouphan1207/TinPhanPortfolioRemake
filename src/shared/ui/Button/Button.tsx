@@ -37,7 +37,7 @@ export const Button = (props: ButtonProps) => {
         styles[form],
         {
           [styles.disabled]: disabled,
-        }
+        },
       )}
     >
       {children}

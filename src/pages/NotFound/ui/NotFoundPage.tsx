@@ -1,11 +1,12 @@
 import { useTranslation } from "react-i18next";
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router";
 
 import NotFoundIcon from "@/shared/assets/icons/NotFound.svg?react";
 import { routePaths } from "@/shared/config";
-import { Button } from "@/shared/ui";
+import { AppPage, Button } from "@/shared/ui";
 
-import styles from "./NotFoundPage.module.scss";
+import * as stylesModule from "./NotFoundPage.module.scss";
+const styles = (stylesModule as any)?.default ?? stylesModule;
 
 const NotFoundPage = () => {
   const { t } = useTranslation();
@@ -20,21 +21,23 @@ const NotFoundPage = () => {
   };
 
   return (
-    <div className={styles.wrapper}>
-      <div className={styles.content}>
-        <NotFoundIcon className={styles.icon} />
-        <h3 className={styles.title}>{t("notFound.title")}</h3>
-        <p className={styles.description}>{t("notFound.description")}</p>
-        <Button
-          onClick={handleClickBack}
-          theme="primary"
-          form="rounded"
-          className={styles.button}
-        >
-          {t("notFound.goBack")}
-        </Button>
-      </div>
-    </div>
+    <AppPage>
+      <AppPage.Content className={styles.wrapper}>
+        <div className={styles.content}>
+          <NotFoundIcon className={styles.icon} />
+          <h3 className={styles.title}>{t("notFound.title")}</h3>
+          <p className={styles.description}>{t("notFound.description")}</p>
+          <Button
+            onClick={handleClickBack}
+            theme="primary"
+            form="rounded"
+            className={styles.button}
+          >
+            {t("notFound.goBack")}
+          </Button>
+        </div>
+      </AppPage.Content>
+    </AppPage>
   );
 };
 export default NotFoundPage;

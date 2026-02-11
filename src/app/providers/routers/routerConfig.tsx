@@ -4,6 +4,7 @@ import { HomePage } from "@/pages/Home";
 
 import { AppRoutes, routePaths } from "@/shared/config";
 import { LoginPage } from "@/pages/Login";
+import { NotFoundPage } from "@/pages/NotFound";
 
 export const routeConfig: RouteProps[] = [
   {
@@ -16,6 +17,6 @@ export const routeConfig: RouteProps[] = [
   },
   {
     path: routePaths[AppRoutes.NOT_FOUND],
-    element: <>Not</>,
+    element: <NotFoundPage />,
   },
 ];
