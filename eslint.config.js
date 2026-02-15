@@ -23,12 +23,13 @@ export default defineConfig([
       globals: globals.browser,
     },
     rules: {
-      quotes: ["error", "backtick", { allowTemplateLiterals: true }],
+      // NOTE: keep ESLint focused on correctness.
+      // Formatting (quotes/semicolons/trailing commas/spacing) is best handled by a formatter like Prettier.
       "no-unused-vars": "warn",
-      semi: ["error", "never"],
-      "comma-dangle": ["error", "always-multiline"],
-      "object-curly-spacing": ["error", "always"],
-      "@typescript/no-unused-vars": ["error", { argsIgnorePattern: "^_" }],
+      "@typescript-eslint/no-unused-vars": [
+        "error",
+        { argsIgnorePattern: "^_" },
+      ],
     },
   },
 ]);

@@ -1,7 +1,9 @@
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import * as stylesModule from "./LoginPage.module.scss";
-const styles = (stylesModule as any)?.default ?? stylesModule;
+const styles =
+  (stylesModule as unknown as { default?: Record<string, string> })?.default ??
+  (stylesModule as unknown as Record<string, string>);
 
 const LoginPage = () => {
   const { t } = useTranslation("login");

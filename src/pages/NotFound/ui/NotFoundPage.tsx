@@ -6,7 +6,9 @@ import { routePaths } from "@/shared/config";
 import { AppPage, Button } from "@/shared/ui";
 
 import * as stylesModule from "./NotFoundPage.module.scss";
-const styles = (stylesModule as any)?.default ?? stylesModule;
+const styles =
+  (stylesModule as unknown as { default?: Record<string, string> })?.default ??
+  (stylesModule as unknown as Record<string, string>);
 
 const NotFoundPage = () => {
   const { t } = useTranslation();
