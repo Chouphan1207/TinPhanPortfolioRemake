@@ -8,6 +8,7 @@
     "build": "tsc -b && vite build",
     "lint:ts": "tsx",
     "lint:scss": "stylelint \"**/*.scss\"",
+    "lint": "npm run lint:ts && npm run lint:scss",
     "preview": "vite preview",
     "test:unit": "vitest",
     "test:regression": "npx chromatic",
