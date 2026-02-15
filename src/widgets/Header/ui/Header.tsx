@@ -1,6 +1,6 @@
 import Logo from "@/shared/assets/icons/Logo.png";
 import MapPin from "@/shared/assets/icons/MapPin.svg?react";
-import SearchIcon from "@/shared/assets/icons/search.svg?react";
+import SearchIcon from "@/shared/assets/icons/Search.svg?react";
 import UserIcon from "@/shared/assets/icons/Users.svg?react";
 
 import styles from "./Header.module.scss";
