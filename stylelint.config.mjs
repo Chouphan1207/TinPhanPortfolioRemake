@@ -2,6 +2,6 @@
 export default {
   extends: ["stylelint-config-standard"],
   rules: {
-    "rule-empty-line-before": "never-multi-line",
+    "rule-empty-line-before": null,
   },
 };
