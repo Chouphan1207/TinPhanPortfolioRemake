@@ -1,30 +1,11 @@
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
-const LogoIcon = () => (
-  <svg
-    width="100"
-    height="100"
-    viewBox="0 0 100 100"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <circle cx="50" cy="50" r="48" stroke="#222" strokeWidth="4" fill="#fff" />
-    <text
-      x="50%"
-      y="50%"
-      textAnchor="middle"
-      dy=".3em"
-      fontSize="32"
-      fill="#222"
-    >
-      Logo
-    </text>
-  </svg>
-);
 import { routePaths } from "@/shared/config";
 
 import styles from "./Footer.module.scss";
+
+import Logo from "@/shared/assets/icons/Logo.png";
 
 export const Footer = () => {
   const { t } = useTranslation();
@@ -32,7 +13,7 @@ export const Footer = () => {
     <footer className={styles.footer}>
       <div className={styles.container}>
         <span className={styles.logo}>
-          <LogoIcon />
+          <img src={Logo} alt="Logo" className={styles.logo} height={100} />
         </span>
 
         <div className={styles.links}>
