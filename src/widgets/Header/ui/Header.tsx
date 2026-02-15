@@ -1,24 +1,4 @@
-const Logo = () => (
-  <svg
-    width="50"
-    height="50"
-    viewBox="0 0 50 50"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <circle cx="25" cy="25" r="24" stroke="#222" strokeWidth="2" fill="#fff" />
-    <text
-      x="50%"
-      y="50%"
-      textAnchor="middle"
-      dy=".3em"
-      fontSize="16"
-      fill="#222"
-    >
-      Logo
-    </text>
-  </svg>
-);
+import Logo from "@/shared/assets/icons/Logo.png";
 import MapPin from "@/shared/assets/icons/MapPin.svg?react";
 import SearchIcon from "@/shared/assets/icons/search.svg?react";
 import UserIcon from "@/shared/assets/icons/Users.svg?react";
@@ -43,9 +23,7 @@ export const Header = () => {
   return (
     <header className={styles.header}>
       <div className={styles.section}>
-        <span className={styles.logo}>
-          <Logo />
-        </span>
+        <img src={Logo} alt="Logo" className={styles.logo} height={50} />
         <Button theme="ghost">
           <AppIcon Icon={MapPin} />
           <span>VietNam</span>
