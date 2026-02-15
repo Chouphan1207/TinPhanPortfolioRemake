@@ -8,8 +8,8 @@ export const classNames = (...args: ClassValue[]): string => {
         if (typeof arg === "object") {
             return (
                 Object.entries(arg)
-                .filter(([_, value]) => Boolean(value))
-                .map(([key, _]) => key)
+                .filter(([, value]) => Boolean(value))
+                .map(([key]) => key)
             );
         }
         return [];

@@ -14,7 +14,6 @@ type HTMLInputType = Omit<InputHTMLAttributes<HTMLInputElement>, "onChange">;
 
 interface InputProps extends HTMLInputType {
   className?: string;
-  value?: string;
   disabled?: boolean;
   rounded?: boolean;
   Icon?: ReactNode;
@@ -27,7 +26,6 @@ export const Input = (props: InputProps) => {
 
   const {
     className,
-    value,
     disabled = false,
     rounded = false,
     Icon,
@@ -62,7 +60,7 @@ export const Input = (props: InputProps) => {
       {Icon}
       <input
         {...rest}
-        value={value}
+        value={rest.value}
         disabled={disabled}
         onChange={handleChange}
         onFocus={handleFocus}
