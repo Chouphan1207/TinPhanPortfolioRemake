@@ -41,6 +41,7 @@ jobs:
         with:
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
           exitZeroOnChanges: false
+          autoAcceptChanges: true
 
       - name: Build
         run: npm run build
