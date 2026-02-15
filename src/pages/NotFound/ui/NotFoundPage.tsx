@@ -5,7 +5,7 @@ import NotFoundIcon from "@/shared/assets/icons/NotFound.svg?react";
 import { routePaths } from "@/shared/config";
 import { AppPage, Button } from "@/shared/ui";
 
-import * as stylesModule from "./NotFoundPage.Module.scss";
+import * as stylesModule from "./NotFoundPage.module.scss";
 const styles =
   (stylesModule as unknown as { default?: Record<string, string> })?.default ??
   (stylesModule as unknown as Record<string, string>);
