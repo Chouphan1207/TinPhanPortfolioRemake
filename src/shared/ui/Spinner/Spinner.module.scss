@@ -1,3 +1,4 @@
+
 :root {
   --primary-color: #0FA3B1; // customize your loader color
 }
@@ -6,19 +7,18 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  
-  // base bar styles
-  width: 1em;               // fatter bar
-  height: 1.5em;            // slightly taller for balance
+  width: 1em;
+  height: 1.5em;
   background: var(--primary-color);
   display: inline-block;
   transform-origin: bottom center;
   animation: loader 1.2s infinite ease-in-out 0.2s;
 
   &::before,
+  
   &::after {
     content: '';
-    width: 1em;             // fatter bar
+    width: 1em;
     height: 2em;
     background: var(--primary-color);
     display: inline-block;
@@ -28,12 +28,12 @@
   }
 
   &::before {
-    left: -1.4em;           // more spacing since bars are wider
+    left: -1.4em;
     animation: loader 1.2s infinite ease-in-out;
   }
 
   &::after {
-    left: 1.4em;            // more spacing since bars are wider
+    left: 1.4em;
     animation: loader 1.2s infinite ease-in-out 0.4s;
   }
 }

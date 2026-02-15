@@ -1,8 +1,8 @@
-@use "themes/calm.scss";
-@use "themes/heavy.scss";
-@use "themes/neutral.scss";
-@use "global.scss";
-@use "reset.scss";
+@use "themes/calm";
+@use "themes/heavy";
+@use "themes/neutral";
+@use "global";
+@use "reset";
 
 body {
   font: var(--font-m);

@@ -11,16 +11,16 @@
     outline: none;
 }
 
-.primary{
-    background-color: var(--primary-color);
-    color: var(--white);
-
+.disabled{
+    
     svg{
         fill: var(--white);
     }
+    
     &:hover{
         background-color: var(--primary-color-dark);
     }
+
 }
 
 .secondary{
@@ -30,6 +30,7 @@
     &:hover{
         border-color: 1px solid var(--primary-color-light);
     }
+
 }
 
 .teriary{
@@ -67,6 +68,7 @@
     background-color: var(--gray-100);
     pointer-events: none;
 
+    
     svg{
         fill: var(--gray-400);
     }
