@@ -165,26 +165,6 @@ import SearchIcon from "@/shared/assets/icons/Search.svg?react";
 
 ---
 
-## Recent fixes (important)
-
-- Fixed asset case: `logo.png` → `Logo.png` (prevents Vite ENOENT on CI)
-- Fixed import case for `Search.svg` in `Header`
-- Renamed i18n key `footer.changelog` → `footer.changeLog`
-- (Optional) Chromatic CI: `autoAcceptChanges` setting added
-
----
-
-## Demo script (short)
-
-1. Open app → show `Header` with `ThemeSwitcher` and `LanguageSwitcher`.
-2. Toggle language → observe `Footer` `Changelog` label change.
-3. Demonstrate `PasswordInput` toggle (eye icon).
-4. Show Button variants in Storybook.
-5. Run `npm run test:unit` → show green tests.
-6. Show Chromatic Storybook snapshots.
-
----
-
 ## Contributing
 
 - Follow Feature‑Sliced structure for new features.
@@ -196,12 +176,3 @@ import SearchIcon from "@/shared/assets/icons/Search.svg?react";
 ## License
 
 MIT — Tin Phan
-
----
-
-If you want, I can also:
-
-- Generate a shorter `README-short.md` for the GitHub project description, or
-- Create slide speaker notes / a one‑page handout for your documentary.
-
-Which of the two would you like next?
