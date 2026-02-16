@@ -7,8 +7,8 @@
   "footer":{
     "about": "About",
     "aboutUs": "About Us",
-    "ourBranches": "Our Branches",
-    "changelog": "Changelog",
+  "ourBranches": "Our Branches",
+  "changeLog": "Changelog",
     "quickLinks": "Quick Links",
     "faqs": "FAQs",
     "recipes": "Recipes",
