@@ -5,13 +5,16 @@ import { ThemeProvider } from "./app/providers/theme/ThemeProvider";
 import { BrowserRouter } from "react-router-dom";
 import "@/shared/config/i18n/i18n";
 import "@/app/styles/index.scss";
+import { StoreProvider } from "./app/providers/index.ts";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <ThemeProvider>
-      <BrowserRouter>
-        <App />
-      </BrowserRouter>
-    </ThemeProvider>
-  </StrictMode>
+    <StoreProvider>
+      <ThemeProvider>
+        <BrowserRouter>
+          <App />
+        </BrowserRouter>
+      </ThemeProvider>
+    </StoreProvider>
+  </StrictMode>,
 );

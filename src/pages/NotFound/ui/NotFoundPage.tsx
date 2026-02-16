@@ -4,6 +4,7 @@ import { useNavigate } from "react-router";
 import NotFoundIcon from "@/shared/assets/icons/NotFound.svg?react";
 import { routePaths } from "@/shared/config";
 import { AppPage, Button } from "@/shared/ui";
+import { Footer } from "@/widgets/Footer";
 
 import * as stylesModule from "./NotFoundPage.module.scss";
 const styles =
@@ -39,6 +40,8 @@ const NotFoundPage = () => {
           </Button>
         </div>
       </AppPage.Content>
+      {/* Keep footer pinned to bottom across pages */}
+      <Footer />
     </AppPage>
   );
 };

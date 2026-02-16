@@ -1,3 +1,4 @@
+import { AuthProviders, type AuthProviderType } from "./auth/auth";
 import { LanguageIconList, type SupportedLngType } from "./i18n/LanguageIconList";
 import { routePaths, AppRoutes } from "./router/routePaths";
 import { 
@@ -8,6 +9,7 @@ import {
 } from "./theme/ThemeContext";
 import { useTheme } from "./theme/useTheme";
 
+
 export {
     routePaths, 
     AppRoutes, 
@@ -15,6 +17,8 @@ export {
     LOCAL_STORAGE_THEME_KEY, 
     ThemeContext,
     useTheme, 
+    AuthProviders,
+    type AuthProviderType,
     LanguageIconList,
     type ThemeType,
     type SupportedLngType 

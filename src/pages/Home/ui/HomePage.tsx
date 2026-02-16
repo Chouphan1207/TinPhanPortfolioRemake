@@ -6,6 +6,7 @@ const HomePage = () => {
   return (
     <div className={styles.pageWrapper}>
       <Header />
+      <div className={styles.content}></div>
       <Footer />
     </div>
   );
