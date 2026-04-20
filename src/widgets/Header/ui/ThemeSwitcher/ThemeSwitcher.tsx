@@ -7,7 +7,7 @@ export const ThemeSwitcher = () => {
   const { toggleTheme } = useTheme();
 
   return (
-    <Button theme="ghost" onClick={toggleTheme}>
+    <Button theme="tertiary" onClick={toggleTheme}>
       <AppIcon Icon={CircleIcon} filled />
     </Button>
   );

@@ -1,7 +1,6 @@
 import type { Preview } from "@storybook/react-vite";
 
 import {
-  ThemeDecorator,
   RouterDecorator,
   LanguageDecorator,
 } from "../src/shared/config/storybook";
@@ -10,20 +9,6 @@ import "../src/app/styles/index.scss";
 
 const preview: Preview = {
   globalTypes: {
-    theme: {
-      name: "Theme",
-      description: " App theme",
-      toolbar: {
-        icon: "circlehollow",
-        items: [
-          { value: "neutral-theme", title: "Neutral" },
-          { value: "calm-theme", title: "Calm" },
-          { value: "heavy-theme", title: "Heavy" },
-        ],
-        dynamicTitle: true,
-      },
-  defaultValue: "neutral-theme",
-    },
     locale: {
       name: "Locale",
       description: " App locale",
@@ -54,7 +39,6 @@ const preview: Preview = {
     },
   },
   decorators: [
-    ThemeDecorator,
     RouterDecorator,
     LanguageDecorator,
   ],

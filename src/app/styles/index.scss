@@ -1,12 +1,10 @@
-@use "themes/calm";
-@use "themes/heavy";
-@use "themes/neutral";
 @use "global";
 @use "reset";
 
 body {
   font: var(--font-m);
   min-height: 100vh;
-  background: var(--white);
-  color: var(--black);
+  background: var(--background-color);
+  color: var(--font-color);
+  transition: background 0.3s, color 0.3s, border-color 0.3s, background-color 0.3s;
 }

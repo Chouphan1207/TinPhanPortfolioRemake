@@ -6,11 +6,13 @@ import {
 
 import { userReducer } from "@/entities/user";
 import { type StateSchema } from "./StateSchema";
+import { loginReducer } from "@/features/login";
 
 export const createStore = (initialState?: StateSchema) => {
   return configureStore<StateSchema>({
     reducer: {
       user: userReducer,
+      loginForm: loginReducer,
     },
     preloadedState: initialState,
     middleware: (getDefaultMiddleware) => getDefaultMiddleware(),

@@ -1,18 +1,28 @@
 .calm-theme {
-  --background-color:   #f8f7f4; /* Light stone white background */
-  --text-color:         #2d2d2d; /* Deep graphite gray for readability */
-  
-  --primary-color:        #d6c6ad; /* Warm neutral beige - like maple wood */
-  --primary-color-light:  #ede1cb; /* Soft cream highlight */
-  --primary-color-dark:   #bca786; /* Deeper wood tone for contrast */
+  --button-bg: ;
+  --button-bg-hover: ;
+  --button-bg-active: ;
+  --button-text: ;
+  --button-border: ;
+  --background-color: ;
+  --text-color: ;
 
-  --secondary-color:        #b2a89e; /* Muted taupe gray - subtle and elegant */
-  --secondary-color-light:  #e6e3de; /* Pale neutral - soft surfaces */
-  --secondary-color-dark:   #8e837a; /* Darker taupe for shadows and depth */
+  --header-background-color: ;
+  --header-font-color: ;
+  --footer-background-color: ;
+  --footer-font-color: ;
 
-  --accent-color:   #d9b978; /* Gold accent - inspired by guitar hardware */
-  --muted-color:    #777; /* Muted gray for icons or secondary text */
+  --primary-color: ;
+  --primary-color-light: ;
+  --primary-color-dark: ;
 
-  --border-color:   #e0ddd8; /* Gentle divider tone */
-  --hover-overlay: rgb(0 0 0 / 5%); /* Subtle hover feedback */
+  --secondary-color: ;
+  --secondary-color-light: ;
+  --secondary-color-dark: ;
+
+  --accent-color: ;
+  --muted-color: ;
+
+  --border-color: ;
+  --hover-overlay: ;
 }

@@ -1,3 +1,4 @@
+
 .wrapper {
   background-color: var(--primary-color-light);
   display: flex;
@@ -7,9 +8,12 @@
   border-radius: 100%;
   fill: var(--primary-color);
 
-  }
+.icon {
+  fill: var(--app-icon-color);
+}
 
 
-.filled {
-  fill: var(--primary-color);
+ .filled {
+   fill: var(--app-icon-color);
+ }
 }

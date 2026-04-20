@@ -1,9 +1,8 @@
 import {
   LOCAL_STORAGE_THEME_KEY,
-  Theme,
   ThemeContext,
-  type ThemeType,
 } from "@/shared/config/theme/ThemeContext";
+import type { ThemeType } from "@/shared/config/theme/ThemeContext";
 import { useEffect, useState } from "react";
 
 interface ThemeProviderProps {
@@ -11,7 +10,7 @@ interface ThemeProviderProps {
 }
 
 const defaultTheme =
-  (localStorage.getItem(LOCAL_STORAGE_THEME_KEY) as ThemeType) || Theme.NEUTRAL;
+  (localStorage.getItem(LOCAL_STORAGE_THEME_KEY) as ThemeType) || "default";
 
 export const ThemeProvider = ({ children }: ThemeProviderProps) => {
   const [theme, setTheme] = useState<ThemeType>(defaultTheme);

@@ -1,8 +1,8 @@
-# GUITAR STORE — Where harmony collides
+# FOUNDATION — Your project starter
 
 By Tin Phan
 
-A Feature‑Sliced, themeable e‑commerce front‑end for guitars — built with React, TypeScript and Vite. This repository demonstrates internationalization (i18n), reusable UI primitives, Storybook-driven component development, unit tests (Vitest), and CI visual regression.
+A Feature‑Sliced, themeable front‑end foundation template — built with React, TypeScript and Vite. This repository demonstrates internationalization (i18n), reusable UI primitives, Storybook-driven component development, unit tests (Vitest), and CI visual regression.
 
 ---
 

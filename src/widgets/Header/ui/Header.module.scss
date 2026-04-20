@@ -1,5 +1,6 @@
 .header {
-    background-color: var(--white);
+    background-color: var(--header-background-color);
+    color: var(--font-color, #fff);
     border-bottom: 1px solid var(--light-gray);
     padding: 10px var(--container-padding);
     display: flex;
@@ -19,6 +20,6 @@
 }
 
 .logo {
-    fill: var(--primary-color);
+    fill: var(--header-background-color, #fff);
 }
 
