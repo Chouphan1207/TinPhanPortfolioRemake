@@ -10,7 +10,7 @@ interface ThemeProviderProps {
 }
 
 const defaultTheme =
-  (localStorage.getItem(LOCAL_STORAGE_THEME_KEY) as ThemeType) || "default";
+  (localStorage.getItem(LOCAL_STORAGE_THEME_KEY) as ThemeType) || "light-theme";
 
 export const ThemeProvider = ({ children }: ThemeProviderProps) => {
   const [theme, setTheme] = useState<ThemeType>(defaultTheme);

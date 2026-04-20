@@ -1,0 +1,28 @@
+body.dark-theme {
+  --button-bg: #111;
+  --button-bg-hover: #222;
+  --button-bg-active: #000;
+  --button-text: #fff;
+  --button-border: #222;
+  --background-color: #000;
+  --text-color: #fff;
+
+  --header-background-color: #111;
+  --header-font-color: #fff;
+  --footer-background-color: #111;
+  --footer-font-color: #fff;
+
+  --primary-color: #fff;
+  --primary-color-light: #fff;
+  --primary-color-dark: #ccc;
+
+  --secondary-color: #222;
+  --secondary-color-light: #333;
+  --secondary-color-dark: #000;
+
+  --accent-color: #fff;
+  --muted-color: #888;
+
+  --border-color: #222;
+  --hover-overlay: rgba(255,255,255,0.08);
+}

@@ -9,6 +9,7 @@ import { LanguageSwitcher } from "./LanguageSwitcher/LanguageSwitcher";
 import { useNavigate } from "react-router-dom";
 import { routePaths } from "@/shared/config";
 import { useTranslation } from "react-i18next";
+import { ThemeSwitcher } from "./ThemeSwitcher/ThemeSwitcher";
 
 export const Header = () => {
   const navigate = useNavigate();
@@ -44,6 +45,7 @@ export const Header = () => {
         </Button>
 
         <LanguageSwitcher />
+        <ThemeSwitcher />
       </div>
     </header>
   );
