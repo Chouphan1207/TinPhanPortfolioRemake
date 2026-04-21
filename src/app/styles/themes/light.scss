@@ -1,28 +1,29 @@
 body.light-theme {
-  --button-bg: #fff;
-  --button-bg-hover: #f5f5f5;
-  --button-bg-active: #e0e0e0;
-  --button-text: #000;
-  --button-border: #ccc;
-  --background-color: #fff;
-  --text-color: #000;
+  --button-bg: #FEFBF3;          /* off-white */
+  --button-bg-hover: #F8F0DF;    /* warm beige */
+  --button-bg-active: #79B4B7;   /* teal */
+  --button-text: #000;           /* black for contrast */
+  --button-border: #9D9D9D;      /* neutral gray */
 
-  --header-background-color: #000;
-  --header-font-color: #000;
-  --footer-background-color: #fff;
-  --footer-font-color: #000;
+  --background-color: #FEFBF3;   /* off-white */
+  --text-color: #000;            /* black */
 
-  --primary-color: #000;
-  --primary-color-light: #222;
-  --primary-color-dark: #000;
+  --header-background-color: #79B4B7; /* teal */
+  --header-font-color: #FEFBF3;       /* off-white */
+  --footer-background-color: #F8F0DF; /* warm beige */
+  --footer-font-color: #000;          /* black */
 
-  --secondary-color: #f5f5f5;
-  --secondary-color-light: #fafafa;
-  --secondary-color-dark: #e0e0e0;
+  --primary-color: #79B4B7;       /* teal */
+  --primary-color-light: #F8F0DF; /* beige */
+  --primary-color-dark: #9D9D9D;  /* gray */
 
-  --accent-color: #000;
-  --muted-color: #888;
+  --secondary-color: #F8F0DF;     /* beige */
+  --secondary-color-light: #FEFBF3; /* off-white */
+  --secondary-color-dark: #9D9D9D;  /* gray */
 
-  --border-color: #ccc;
-  --hover-overlay: rgba(0,0,0,0.06);
+  --accent-color: #79B4B7;        /* teal accent */
+  --muted-color: #9D9D9D;         /* neutral gray */
+
+  --border-color: #9D9D9D;        /* gray border */
+  --hover-overlay: rgba(121, 180, 183, 0.1); /* subtle teal overlay */
 }

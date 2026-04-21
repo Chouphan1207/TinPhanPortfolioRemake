@@ -1,28 +1,29 @@
 body.dark-theme {
-  --button-bg: #111;
-  --button-bg-hover: #222;
-  --button-bg-active: #000;
-  --button-text: #fff;
-  --button-border: #222;
-  --background-color: #000;
-  --text-color: #fff;
+  --button-bg: #D2C1B6;          /* beige for contrast */
+  --button-bg-hover: #456882;    /* steel blue hover */
+  --button-bg-active: #234C6A;   /* blue-gray active */
+  --button-text: #1B3C53;        /* navy text for readability */
+  --button-border: #456882;      /* steel blue border */
 
-  --header-background-color: #111;
-  --header-font-color: #fff;
-  --footer-background-color: #111;
-  --footer-font-color: #fff;
+  --background-color: #1B3C53;   /* deep navy background */
+  --text-color: #D2C1B6;         /* beige text */
 
-  --primary-color: #fff;
-  --primary-color-light: #fff;
-  --primary-color-dark: #ccc;
+  --header-background-color: #234C6A; /* blue-gray header */
+  --header-font-color: #D2C1B6;       /* beige text */
+  --footer-background-color: #456882; /* steel blue footer */
+  --footer-font-color: #D2C1B6;       /* beige text */
 
-  --secondary-color: #222;
-  --secondary-color-light: #333;
-  --secondary-color-dark: #000;
+  --primary-color: #456882;       /* steel blue primary */
+  --primary-color-light: #234C6A; /* lighter blue-gray */
+  --primary-color-dark: #1B3C53;  /* deep navy */
 
-  --accent-color: #fff;
-  --muted-color: #888;
+  --secondary-color: #234C6A;     /* blue-gray secondary */
+  --secondary-color-light: #456882; /* steel blue */
+  --secondary-color-dark: #1B3C53;  /* navy depth */
 
-  --border-color: #222;
-  --hover-overlay: rgba(255,255,255,0.08);
+  --accent-color: #D2C1B6;        /* beige accent */
+  --muted-color: #9D9D9D;         /* neutral muted tone */
+
+  --border-color: #456882;        /* steel blue border */
+  --hover-overlay: rgba(210, 193, 182, 0.15); /* subtle beige overlay */
 }
