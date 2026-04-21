@@ -1,4 +1,4 @@
-# FOUNDATION — Your project starter
+# Tinphan — Your project starter
 
 By Tin Phan
 
