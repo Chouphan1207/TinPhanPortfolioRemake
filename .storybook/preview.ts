@@ -40,7 +40,7 @@ const preview: Preview = {
   },
   decorators: [
     RouterDecorator,
-    LanguageDecorator,
+    // LanguageDecorator, // Temporarily removed for debugging
   ],
 };
 

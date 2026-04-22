@@ -10,6 +10,26 @@ const meta = {
   },
   tags: ["autodocs"],
   args: { children: "Button" },
+  argTypes: {
+    theme: {
+      control: { type: "select" },
+      options: ["primary", "secondary", "tertiary", "outline", "ghost"],
+    },
+    size: {
+      control: { type: "select" },
+      options: ["xs", "sm", "md", "lg"],
+    },
+    form: {
+      control: { type: "select" },
+      options: ["pill", "rounded", "circle"],
+    },
+    disabled: {
+      control: { type: "boolean" },
+    },
+    children: {
+      control: { type: "text" },
+    },
+  },
 } satisfies Meta<typeof Button>;
 
 export default meta;

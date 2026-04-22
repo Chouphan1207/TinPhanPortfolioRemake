@@ -1,7 +1,7 @@
 import CircleIcon from "@/shared/assets/icons/Circle.svg?react";
 
 import { useTheme } from "@/shared/config";
-import { AppIcon, Button } from "@/shared/ui";
+import { Button } from "@/shared/ui";
 
 export const ThemeSwitcher = () => {
   const { theme, toggleTheme } = useTheme();
