@@ -5,12 +5,12 @@ body.dark-theme {
   --button-text: #1B3C53;        /* navy text for readability */
   --button-border: #456882;      /* steel blue border */
 
-  --background-color: #1B3C53;   /* deep navy background */
-  --text-color: #D2C1B6;         /* beige text */
+  --background-color: #0D1A26;   /* very dark navy */
+  --text-color: #D2C1B6;         /* beige text stays readable */
 
-  --header-background-color: #234C6A; /* blue-gray header */
-  --header-font-color: #D2C1B6;       /* beige text */
-  --footer-background-color: #456882; /* steel blue footer */
+  --header-background-color: #234C6A; /* darker header for balance */
+  --header-font-color: #D2C1B6;       /* beige text for contrast */
+  --footer-background-color: #234C6A; /* darker footer */
   --footer-font-color: #D2C1B6;       /* beige text */
 
   --primary-color: #456882;       /* steel blue primary */
