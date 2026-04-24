@@ -1,157 +1,160 @@
-.button{
+.button {
+    width: max-content;
     display: inline-flex;
     justify-content: center;
     align-items: center;
     gap: 8px;
     cursor: pointer;
-    border: 1px solid var(--button-bg);
+    border: none;
     border-radius: 8px;
-    transition: background 0.3s, color 0.3s, border-color 0.3s;
-    color: var(--button-text);
-    background: var(--button-bg);
+    transition: all 0.2s linear;
+    color: var(--black);
     outline: none;
 }
 
-.button:hover {
-    background: var(--button-bg-hover);
-    border-color: var(--button-bg);
-}
+.primary {
+    background-color: var(--primary-color);
+    color: var(--white);
 
-.button:active {
-    background: var(--button-bg-active);
-    border-color: var(--button-border);
-}
+    svg {
+        fill: var(--white);
+    }
 
-.disabled{
-    opacity: 0.6;
-    pointer-events: none;
-
-}
-
-.secondary{
-    background: var(--button-bg) 20%;
-    border: 1px solid var(--button-border);
-    color: var(--button-text);
     &:hover {
-        background: var(--button-bg-hover);
-        border-color: var(--button-border);
+        background-color: var(--primary-color-dark);
     }
-
 }
 
-.teriary{
-    background: var(--button-bg) 20%;
-    border: 1px solid transparent;
-    color: var(--button-text);
+.secondary {
+    background-color: var(--primary-color-light);
+    border: 1px solid var(--primary-color-light);
+
     &:hover {
-        background: var(--button-bg-hover);
-        border-color: var(--button-border);
+        border-color: var(--primary-color);
     }
 }
 
-.outline{
-    background: var(--button-bg) 30%;
-    border: 1px solid var(--button-border);
-    color: var(--button-text);
-    &:hover{
-        background: var(--button-bg-hover);
-        border-color: var(--button-border);
-    }
-}
+.tertiary {
+    background-color: var(--white);
+    border: 1px solid var(--gray-100);
 
-.ghost{
-    background-color: rgba(var(--button-bg), 0.5);
-    border: none;
-    padding: 0;
-    font-weight: 500;
-    &:hover{
-        background-color: var(--button-bg-hover);
-    }
-}
-
-.disabled{
-    color: var(--gray-400);
-    background-color: var(--gray-100);
-    pointer-events: none;
-
-    
-    svg{
-        fill: var(--gray-400);
-    }
-
-    &.disabled{
+    &:hover {
+        background-color: var(--gray-50);
         border-color: var(--gray-200);
     }
 }
 
-.pill{
+.outline {
+    background-color: var(--white);
+    border: 1px solid var(--primary-color);
+
+    &:hover {
+        background-color: var(--primary-color-light);
+        border-color: var(--primary-color-dark);
+    }
+
+    &.disabled {
+        border-color: var(--gray-200);
+    }
+}
+
+.disabled {
+    color: var(--gray-400);
+    background-color: var(--gray-200);
+    pointer-events: none;
+
+    svg {
+        fill: var(--gray-400);
+    }
+}
+
+.pill {
     border-radius: 39px;
 }
 
-.circle{
+.circle {
     border-radius: 100%;
-    aspect-ratio: 1px;
+    flex-shrink: 0;
 }
 
-.xs{
+.xs {
     padding: 8px 16px;
     font: var(--font-xs);
 
-    svg{
-        width: 16px;
+    svg {
         height: 16px;
+        width: 16px;
     }
 
     &.circle {
-        padding: 8px;
+        width: 32px;
+        height: 32px;
+        padding: 0;
     }
 }
 
-.sm{
+.sm {
     padding: 10px 20px;
     font: var(--font-s);
 
-    svg{
-        width: 20px;
-        height: 20px;
+    svg {
+        height: 18px;
+        width: 18px;
     }
 
     &.circle {
-        padding: 10px;
+        width: 40px;
+        height: 40px;
+        padding: 0;
     }
 }
 
-.md{
+.md {
     padding: 12px 24px;
     font: var(--font-m);
 
-    svg{
-        width: 20px;
+    svg {
         height: 20px;
+        width: 20px;
     }
 
     &.circle {
-        padding: 12px;
+        width: 44px;
+        height: 44px;
+        padding: 0;
     }
 }
 
-.lg{
+.lg {
     padding: 16px 32px;
     font: var(--font-base);
 
-    svg{
-        width: 24px;
+    svg {
         height: 24px;
+        width: 24px;
     }
 
     &.circle {
-        padding: 14px;
+        width: 56px;
+        height: 56px;
+        padding: 0;
     }
 }
 
 .xs,
 .sm,
 .md,
-.lg{
+.lg {
     font-weight: 600;
+}
+
+.ghost {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    font-weight: 500;
+}
+
+.fullWidth {
+    width: 100%;
 }

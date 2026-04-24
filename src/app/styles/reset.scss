@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,12 +8,5 @@ input,
 textarea,
 select,
 button {
-    font-family: inherit;
-    font-size: inherit;
-    color: inherit;
-    background: none;
-    border: none;
-    outline: none;
-    box-shadow: none;
-    appearance: none;
-}   
+    font: inherit;
+}
