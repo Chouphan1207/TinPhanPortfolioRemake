@@ -22,30 +22,19 @@ export const Header = () => {
 
   return (
     <header className={styles.header}>
-      <div className={styles.section}>
+      <div
+        className={styles.section}
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
         <img src={Logo} alt="Logo" className={styles.logo} height={50} />
-        <Button>
-          <AppIcon Icon={MapPin} />
-          <span>VietNam</span>
-        </Button>
-      </div>
-      <div className={styles.section}>
-        <Input
-          rounded
-          placeholder={t("header.searchBy")}
-          Icon={<AppIcon size={18} Icon={SearchIcon} />}
-        />
-      </div>
-      <div className={styles.section}>
-        <Button>{t("header.cart")}</Button>
-
-        <Button onClick={handleLoginClick}>
-          <AppIcon Icon={UserIcon} />
-          <span>{t("header.login")}</span>
-        </Button>
-
-        <LanguageSwitcher />
-        <ThemeSwitcher />
+        <div className={styles.section}>
+          <LanguageSwitcher />
+          <ThemeSwitcher />
+        </div>
       </div>
     </header>
   );
