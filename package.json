@@ -13,7 +13,8 @@
     "test:unit": "vitest",
     "test:regression": "npx chromatic",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "chromatic": "npx chromatic --project-token=chpt_543863ffe84c968"
   },
   "description": "A Feature‑Sliced, themeable front‑end foundation template — built with React, TypeScript and Vite. This repository demonstrates internationalization (i18n), reusable UI primitives, Storybook-driven component development, unit tests (Vitest), and CI visual regression.",
   "dependencies": {
@@ -48,7 +49,7 @@
     "@vitejs/plugin-react": "^5.1.4",
     "@vitest/browser-playwright": "^4.0.18",
     "@vitest/coverage-v8": "^4.0.18",
-    "chromatic": "^15.1.0",
+    "chromatic": "^16.6.0",
     "eslint": "^9.39.2",
     "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-react-hooks": "^5.2.0",
