@@ -1,6 +1,6 @@
 import { createSlice, type PayloadAction } from "@reduxjs/toolkit";
 
-import { AuthMethod, type AuthMethodType } from "@/shared/config";
+import { AuthMethod, type AuthMethodType } from "@/shared/config/auth/auth";
 
 import type { LoginFormSchema } from "../types/loginFormSchema";
 import { login } from "@/entities/user/model/services/login";

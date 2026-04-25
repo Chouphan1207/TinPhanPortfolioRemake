@@ -1,7 +1,6 @@
 import styles from "./HomePage.module.scss";
 import { Header } from "@/widgets/Header";
 import { Footer } from "@/widgets/Footer";
-import { Tabs } from "@/shared/ui/Tabs/Tabs";
 
 const HomePage = () => {
   return (

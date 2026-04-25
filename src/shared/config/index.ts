@@ -1,7 +1,8 @@
 import {    
     AuthMethod, 
     AuthProviders, 
-    LOCAL_STORAGE_USER_KEY
+    LOCAL_STORAGE_USER_KEY,
+    type AuthMethodType
 } from "./auth/auth";
 import { 
     LanguageIconList
@@ -11,11 +12,12 @@ import { routePaths, AppRoutes } from "./router/routePaths";
 import { useTheme } from "./theme/useTheme";
 
 export {
-    AuthMethod,
-    AuthProviders,
+    AuthMethod, AuthProviders,
     LOCAL_STORAGE_USER_KEY,
     LanguageIconList,
     routePaths,
     AppRoutes,
     useTheme
-};
+};    
+export type { AuthMethodType };
+
