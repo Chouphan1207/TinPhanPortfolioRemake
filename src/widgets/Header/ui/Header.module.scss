@@ -1,7 +1,6 @@
 .header {
     background: var(--header-background-color);
     backdrop-filter: blur(100px);
-    -webkit-backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--secondary-color);
     color: var(--header-font-color);
     padding: 10px var(--container-padding);
