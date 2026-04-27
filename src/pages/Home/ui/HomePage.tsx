@@ -2,6 +2,7 @@ import styles from "./HomePage.module.scss";
 import { Header } from "@/widgets/Header";
 import { Footer } from "@/widgets/Footer";
 import mainImage from "@/shared/assets/icons/Main.jpg";
+import { RadioButton } from "@/shared/ui";
 
 const HomePage = () => {
   return (
@@ -10,14 +11,7 @@ const HomePage = () => {
       <main className={styles.content}>
         <div className={styles.leftContent}>
           <div className={styles.intro}>
-            <h1 className={styles.introTitle}>TEST</h1>
-            <p className={styles.introSubtitle}>
-              TEST
-            </p>
-            <div className={styles.introButtons}>
-              <button className={styles.primaryButton}>View My Work</button>
-              <button className={styles.secondaryButton}>Get In Touch</button>
-            </div>
+            <RadioButton/>
           </div>
         </div>
         <div className={styles.rightContent}>
