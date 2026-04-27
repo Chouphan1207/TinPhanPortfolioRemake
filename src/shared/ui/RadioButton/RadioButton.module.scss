@@ -1,8 +1,8 @@
 :root {
-    --accent: #ff3e3e;
-    --panel-bg: #1a1a1a;
-    --wheel-bg: #2a2a2a;
-    --text-active: #ffffff;
+    --accent: rgb(255, 62, 62);
+    --panel-bg: rgb(26, 26, 26);
+    --wheel-bg: rgb(42, 42, 42);
+    --text-active: rgb(255, 255, 255);
     --text-idle: rgba(255, 255, 255, 0.1);
 }
 
@@ -20,7 +20,7 @@
     font-weight: 800;
     font-size: 0.6rem;
     letter-spacing: 2px;
-    color: #888;
+    color: rgb(136, 136, 136);
     text-transform: uppercase;
     animation: pulseHint 2s infinite ease-in-out;
     pointer-events: none;
@@ -44,8 +44,8 @@
     position: relative;
     height: 240px;
     width: 200px;
-    background: #111;
-    border: 2px solid #333;
+    background: rgb(17, 17, 17);
+    border: 2px solid rgb(51, 51, 51);
     border-radius: 30px;
     overflow: hidden;
     display: flex;
@@ -62,8 +62,8 @@
     width: 300px;
     height: 300px;
     background: repeating-conic-gradient(from 0deg,
-            #222 0deg 10deg,
-            #252525 10deg 20deg);
+            rgb(34, 34, 34) 0deg 10deg,
+            rgb(37, 37, 37) 10deg 20deg);
     border-radius: 50%;
     z-index: 1;
     opacity: 0.5;
@@ -118,7 +118,7 @@
     font-family: "Inter", sans-serif;
     font-weight: 900;
     font-size: 0.7rem;
-    color: #ff3e3e;
+    color: rgb(255, 62, 62);
     margin-bottom: -5px;
 }
 
@@ -126,7 +126,7 @@
     font-family: "Inter", sans-serif;
     font-weight: 900;
     font-size: 2.4rem;
-    color: #fff;
+    color: rgb(255, 255, 255);
     letter-spacing: -2px;
     text-transform: uppercase;
 }
@@ -151,7 +151,7 @@
 }
 
 .radio-input input:checked+.wheel-label .label {
-    text-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    text-shadow: 0 0 20px rgba(255, 255, 255, 20%);
 }
 
 .next-trigger {
