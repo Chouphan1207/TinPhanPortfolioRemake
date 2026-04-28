@@ -1,0 +1,91 @@
+.infiniteScrollContainer {
+  position: relative;
+  overflow: hidden;
+  padding: 2rem 0;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.leftFade {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 6rem;
+  background: linear-gradient(to right, var(--background-color, #000), transparent);
+  z-index: 10;
+}
+
+.rightFade {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 6rem;
+  background: linear-gradient(to left, var(--background-color, #000), transparent);
+  z-index: 10;
+}
+
+.scrollRow {
+  display: flex;
+  animation: scroll 30s linear infinite;
+  white-space: nowrap;
+  width: max-content;
+  gap: 1.5rem;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.toolCard {
+  min-width: 200px;
+  height: 7rem;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+  
+  &:hover {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.2);
+  }
+}
+
+.toolIcon {
+  height: 2.5rem;
+  width: 2.5rem;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+}
+
+.toolName {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-color, #fff);
+  margin: 0;
+}
+
+.toolDescription {
+  font-size: 0.75rem;
+  color: var(--text-color, #fff);
+  opacity: 0.7;
+}
+
+// Pause animation on hover
+.scrollRow:hover {
+  animation-play-state: paused;
+}
