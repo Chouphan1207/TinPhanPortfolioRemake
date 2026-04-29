@@ -2,6 +2,9 @@ import { toolsData } from "@/entities/tool";
 import styles from "./InfiniteScrolling.module.scss";
 
 export default function InfiniteScrollTools() {
+  // Create multiple duplicates for seamless infinite scrolling
+  const duplicatedTools = [...toolsData, ...toolsData, ...toolsData, ...toolsData];
+
   return (
     <div className={styles.infiniteScrollContainer}>
       {/* Side gradient fades */}
@@ -10,9 +13,9 @@ export default function InfiniteScrollTools() {
 
       {/* Infinite scroll row */}
       <div className={styles.scrollRow}>
-        {[...toolsData, ...toolsData].map((tool, index) => (
+        {duplicatedTools.map((tool, index) => (
           <div
-            key={index}
+            key={`${tool.name}-${index}`}
             className={styles.toolCard}
           >
             <img src={tool.icon} alt={tool.name} className={styles.toolIcon} />
