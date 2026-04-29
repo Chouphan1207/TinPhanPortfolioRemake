@@ -1,6 +1,6 @@
 import { Button, Input, Tabs } from "@/shared/ui";
 import styles from "./LoginForm.module.scss";
-import { AuthMethod } from "@/shared/config";
+import { AuthMethod } from "../../lib/config/auth";
 
 export const LoginForm = () => {
   return (
