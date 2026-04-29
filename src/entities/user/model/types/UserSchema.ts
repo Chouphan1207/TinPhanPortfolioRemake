@@ -1,4 +1,4 @@
-import type { AuthProvidersType } from "@/shared/config/auth/auth";
+import type { AuthProvidersType } from "@/features/login/lib/config/auth";
 
 export interface User {
     id: string;
