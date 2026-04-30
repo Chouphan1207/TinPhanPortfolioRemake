@@ -6,12 +6,14 @@ import { BentoGrid } from "@/shared/ui/Grid";
 import { bentoGridData } from "@/entities/portfolio";
 import mainImage from "@/shared/assets/icons/Main.jpg";
 import InfiniteScrollTools from "@/shared/ui/InfiniteScrolling/InfiniteScrolling";
+import NoiseGridBackground from "@/shared/ui/NoiseGridBackground/NoisegridBackground";
 
 const HomePage = () => {
   return (
     <div className={styles.pageWrapper}>
       <Header />
       <main className={styles.content}>
+        <NoiseGridBackground showText={false} />
         <div className={styles.leftContent}>
           <div className={styles.intro}>
             <h1 className={styles.introTitle}>Welcome to My Portfolio</h1>
