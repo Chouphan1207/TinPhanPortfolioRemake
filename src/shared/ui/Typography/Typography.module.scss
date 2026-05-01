@@ -1,206 +1,260 @@
-@import "@/shared/assets/fonts/fonts.scss";
+@import "@/shared/assets/fonts/fonts";
 
 .preset-heading-display {
-  @extend .unb-heading-display;
+  font-family: var(--font-family-unbounded);
+  font-size: var(--font-size-6xl);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
 }
 
 .preset-heading-1 {
-  @extend .mst-heading-1;
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-5xl);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
 }
 
 .preset-heading-2 {
-  @extend .mst-heading-2;
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-4xl);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
 }
 
 .preset-heading-3 {
-  @extend .mst-heading-3;
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-snug);
 }
 
 .preset-heading-4 {
-  @extend .mst-heading-4;
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-snug);
 }
 
 .preset-body-large {
-  @extend .mst-body-large;
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-relaxed);
 }
 
 .preset-body-base {
-  @extend .mst-body-base;
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-normal);
 }
 
 .preset-body-small {
-  @extend .mst-body-small;
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-normal);
 }
 
 .preset-caption {
-  @extend .mst-caption;
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-normal);
 }
 
 // Font family classes with semantic prefixes
 .font-bungee {
-  @extend .unb;
+  font-family: var(--font-family-unbounded);
 }
 
 .font-montserrat {
-  @extend .mst;
+  font-family: var(--font-family-montserrat);
 }
 
 .font-primary {
-  @extend .mst;
+  font-family: var(--font-family-primary);
 }
 
 .font-secondary {
-  @extend .unb;
+  font-family: var(--font-family-secondary);
 }
 
 .font-mono {
-  @extend .font-mono;
+  font-family: var(--font-family-mono);
 }
 
 // Additional semantic classes for direct usage
 .bun-heading-display {
-  @extend .unb-heading-display;
+  font-family: var(--font-family-unbounded);
+  font-size: var(--font-size-6xl);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
 }
 
 .mst-heading-1 {
-  @extend .mst-heading-1;
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-5xl);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
 }
 
 .mst-heading-2 {
-  @extend .mst-heading-2;
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-4xl);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
 }
 
 .mst-heading-3 {
-  @extend .mst-heading-3;
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-snug);
 }
 
 .mst-heading-4 {
-  @extend .mst-heading-4;
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-snug);
 }
 
 .mst-body-large {
-  @extend .mst-body-large;
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-relaxed);
 }
 
 .mst-body-base {
-  @extend .mst-body-base;
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-normal);
 }
 
 .mst-body-small {
-  @extend .mst-body-small;
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-normal);
 }
 
 .mst-caption {
-  @extend .mst-caption;
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-normal);
 }
 
 // Font weight classes
 .font-weight-100 {
-  @extend .font-thin;
+  font-weight: var(--font-weight-thin);
 }
 
 .font-weight-200 {
-  @extend .font-extralight;
+  font-weight: var(--font-weight-extralight);
 }
 
 .font-weight-300 {
-  @extend .font-light;
+  font-weight: var(--font-weight-light);
 }
 
 .font-weight-400 {
-  @extend .font-normal;
+  font-weight: var(--font-weight-normal);
 }
 
 .font-weight-500 {
-  @extend .font-medium;
+  font-weight: var(--font-weight-medium);
 }
 
 .font-weight-600 {
-  @extend .font-semibold;
+  font-weight: var(--font-weight-semibold);
 }
 
 .font-weight-700 {
-  @extend .font-bold;
+  font-weight: var(--font-weight-bold);
 }
 
 .font-weight-800 {
-  @extend .font-extrabold;
+  font-weight: var(--font-weight-extrabold);
 }
 
 .font-weight-900 {
-  @extend .font-black;
+  font-weight: var(--font-weight-black);
 }
 
 // Font size classes
 .text-xs {
-  @extend .text-xs;
+  font-size: var(--font-size-xs);
 }
 
 .text-sm {
-  @extend .text-sm;
+  font-size: var(--font-size-sm);
 }
 
 .text-base {
-  @extend .text-base;
+  font-size: var(--font-size-base);
 }
 
 .text-lg {
-  @extend .text-lg;
+  font-size: var(--font-size-lg);
 }
 
 .text-xl {
-  @extend .text-xl;
+  font-size: var(--font-size-xl);
 }
 
 .text-2xl {
-  @extend .text-2xl;
+  font-size: var(--font-size-2xl);
 }
 
 .text-3xl {
-  @extend .text-3xl;
+  font-size: var(--font-size-3xl);
 }
 
 .text-4xl {
-  @extend .text-4xl;
+  font-size: var(--font-size-4xl);
 }
 
 .text-5xl {
-  @extend .text-5xl;
+  font-size: var(--font-size-5xl);
 }
 
 .text-6xl {
-  @extend .text-6xl;
+  font-size: var(--font-size-6xl);
 }
 
 .text-7xl {
-  @extend .text-7xl;
+  font-size: var(--font-size-7xl);
 }
 
 .text-8xl {
-  @extend .text-8xl;
+  font-size: var(--font-size-8xl);
 }
 
 .text-9xl {
-  @extend .text-9xl;
+  font-size: var(--font-size-9xl);
 }
 
 // Line height classes
 .leading-tight {
-  @extend .leading-tight;
+  line-height: var(--line-height-tight);
 }
 
 .leading-snug {
-  @extend .leading-snug;
+  line-height: var(--line-height-snug);
 }
 
 .leading-normal {
-  @extend .leading-normal;
+  line-height: var(--line-height-normal);
 }
 
 .leading-relaxed {
-  @extend .leading-relaxed;
+  line-height: var(--line-height-relaxed);
 }
 
 .leading-loose {
-  @extend .leading-loose;
+  line-height: var(--line-height-loose);
 }

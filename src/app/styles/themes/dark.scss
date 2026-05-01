@@ -1,50 +1,71 @@
 body.dark-theme {
   --button-bg: #111827;
+
   /* dark background */
   --button-bg-hover: #00BBF9;
+
   /* bright blue */
   --button-bg-active: #FF0054;
+
   /* vibrant pink */
   --button-text: #F8F9FA;
+
   /* light text */
   --button-border: #FEE440;
+
   /* yellow accent */
 
   --background-color: #111827;
+
   /* dark background */
   --text-color: #F8F9FA;
+
   /* light text */
 
   --header-background-color: #00BBF9;
+
   /* bright blue */
   --header-font-color: #111827;
+
   /* dark text */
   --footer-background-color: #FF0054;
+
   /* vibrant pink */
   --footer-font-color: #F8F9FA;
+
   /* light text */
 
   --primary-color: #00BBF9;
+
   /* bright blue */
   --primary-color-light: #FEE440;
+
   /* yellow accent */
   --primary-color-dark: #FF0054;
+
   /* vibrant pink */
 
   --secondary-color: #34D399;
+
   /* mint-green */
   --secondary-color-light: #5EEAD4;
+
   /* mint-light */
   --secondary-color-dark: #FDE68A;
+
   /* warm-yellow */
 
   --accent-color: #5EEAD4;
+
   /* mint-light */
   --muted-color: #FDE68A;
+
   /* warm-yellow */
 
   --border-color: #FDE68A;
+
   /* warm-yellow */
-  --hover-overlay: rgba(94, 234, 212, 0.1);
+  --hover-overlay: rgb(94 234 212 / 10%);
+
   /* subtle charcoal overlay */
 }

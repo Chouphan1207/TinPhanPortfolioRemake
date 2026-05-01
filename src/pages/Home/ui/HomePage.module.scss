@@ -45,57 +45,95 @@
 
 
   /* === ADJUSTMENT OPTIONS === */
+
   /* Uncomment and modify these options to adjust the pattern: */
 
   /* 1. POSITIONING OPTIONS */
+
   /* Move pattern to specific positions: */
+
   /* background-position: top left;     /* Top-left corner */
+
   /* background-position: top right;    /* Top-right corner */
+
   /* background-position: bottom left;  /* Bottom-left corner */
+
   /* background-position: bottom right; /* Bottom-right corner */
+
   /* background-position: 20% 30%;      /* Custom position (x y) */
 
   /* 2. SIZE OPTIONS */
+
   /* Control how the pattern scales: */
+
   /* background-size: contain;          /* Fit entire pattern */
+
   /* background-size: 100% 100%;       /* Exact size */
+
   /* background-size: 150% 150%;       /* 150% zoom */
+
   /* background-size: 50px 50px;        /* Fixed pixel size */
+
   /* background-size: auto;             /* Natural size */
 
   /* 3. REPEAT OPTIONS */
+
   /* Control pattern repetition: */
+
   /* background-repeat: repeat;         /* Tile both directions */
+
   /* background-repeat: repeat-x;       /* Tile horizontally only */
+
   /* background-repeat: repeat-y;       /* Tile vertically only */
 
   /* 4. PLACEMENT OPTIONS */
+
   /* Move pattern to specific areas: */
+
   /* inset: 20px;                       /* 20px from all edges */
+
   /* inset: 10px 20px 30px 40px;        /* Top Right Bottom Left */
+
   /* top: 0; left: 0; right: auto; bottom: auto; /* Top-left only */
+
   /* top: 50%; left: 50%; transform: translate(-50%, -50%); /* Center */
 
   /* 5. VISIBILITY OPTIONS */
+
   /* Adjust pattern appearance: */
+
   /* opacity: 0.1;                     /* More transparent */
+
   /* opacity: 0.5;                     /* More visible */
+
   /* opacity: 0.8;                     /* Very visible */
+
   /* mix-blend-mode: multiply;         /* Blend with background */
+
   /* mix-blend-mode: overlay;          /* Overlay blend */
+
   /* filter: brightness(1.2);          /* Brighter */
+
   /* filter: contrast(0.8);            /* Less contrast */
 
   /* 6. CLIPPING OPTIONS */
+
   /* Control pattern visibility area: */
+
   /* border-radius: 10px;              /* Rounded corners */
+
   /* clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); /* Custom shape */
 
   /* 7. TRANSFORMATION OPTIONS */
+
   /* Transform the pattern: */
+
   /* transform: scale(1.2);            /* Zoom in */
+
   /* transform: scale(0.8);            /* Zoom out */
+
   /* transform: rotate(15deg);         /* Rotate */
+
   /* transform: skewX(10deg);          /* Skew horizontally */
 }
 

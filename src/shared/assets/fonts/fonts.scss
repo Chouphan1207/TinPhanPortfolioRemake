@@ -1,5 +1,5 @@
 // Font imports from Google Fonts
-@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import 'https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap';
 
 // Font family variables
 :root {
@@ -255,37 +255,64 @@
 
 // Keep original presets for backward compatibility
 .heading-display {
-  @extend .unb-heading-display;
+  font-family: var(--font-family-unbounded);
+  font-size: var(--font-size-6xl);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
 }
 
 .heading-1 {
-  @extend .mst-heading-1;
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-5xl);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
 }
 
 .heading-2 {
-  @extend .mst-heading-2;
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-4xl);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
 }
 
 .heading-3 {
-  @extend .mst-heading-3;
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-snug);
 }
 
 .heading-4 {
-  @extend .mst-heading-4;
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-snug);
 }
 
 .body-large {
-  @extend .mst-body-large;
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-relaxed);
 }
 
 .body-base {
-  @extend .mst-body-base;
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-normal);
 }
 
 .body-small {
-  @extend .mst-body-small;
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-normal);
 }
 
 .caption {
-  @extend .mst-caption;
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-normal);
 }
