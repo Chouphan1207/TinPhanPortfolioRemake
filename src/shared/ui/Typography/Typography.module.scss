@@ -1,7 +1,7 @@
 @import "@/shared/assets/fonts/fonts.scss";
 
 .preset-heading-display {
-  @extend .bun-heading-display;
+  @extend .unb-heading-display;
 }
 
 .preset-heading-1 {
@@ -38,7 +38,7 @@
 
 // Font family classes with semantic prefixes
 .font-bungee {
-  @extend .bun;
+  @extend .unb;
 }
 
 .font-montserrat {
@@ -50,7 +50,7 @@
 }
 
 .font-secondary {
-  @extend .bun;
+  @extend .unb;
 }
 
 .font-mono {
@@ -59,7 +59,7 @@
 
 // Additional semantic classes for direct usage
 .bun-heading-display {
-  @extend .bun-heading-display;
+  @extend .unb-heading-display;
 }
 
 .mst-heading-1 {

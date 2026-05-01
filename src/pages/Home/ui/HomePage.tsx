@@ -6,26 +6,24 @@ import { BentoGrid } from "@/shared/ui/Grid";
 import { bentoGridData } from "@/entities/portfolio";
 import mainImage from "@/shared/assets/icons/Main.jpg";
 import InfiniteScrollTools from "@/shared/ui/InfiniteScrolling/InfiniteScrolling";
-import NoiseGridBackground from "@/shared/ui/NoiseGridBackground/NoisegridBackground";
 
 const HomePage = () => {
   return (
     <div className={styles.pageWrapper}>
       <Header />
       <main className={styles.content}>
-        <NoiseGridBackground showText={false} />
         <div className={styles.leftContent}>
-          <div className={styles.leftContentPattern} />
+          {/* <div className={styles.leftContentPattern} /> */}
           <div className={styles.intro}>
-            <Typography as="h1" preset="heading-1" className={styles.introTitle}>
+            <Typography as="h1" preset="heading-display" className={styles.introTitle}>
               Welcome to My Portfolio
             </Typography>
             <Typography as="p" preset="body-large" className={styles.introSubtitle}>
               Creating innovative digital experiences with modern web technologies
             </Typography>
             <div className={styles.introButtons}>
-              <Button theme="primary" size="md">View My Work</Button>
-              <Button theme="outline" size="md">Get In Touch</Button>
+              <Button theme="btnHover" size="md">View My Work</Button>
+              <Button theme="btnHover" size="md">Get In Touch</Button>
             </div>
           </div>
         </div>

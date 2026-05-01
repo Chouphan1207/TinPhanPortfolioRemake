@@ -26,7 +26,14 @@
     --white: #fff;
     --black: #000;
 
-    --surface-color: #fcfcfc;
+    // New color scheme - Fresh, Modern, Balanced
+    --charcoal: #1F2937; // Main headings and structure
+    --mint-light: #5EEAD4; // Primary mint accent
+    --mint-green: #34D399; // Secondary green accent  
+    --warm-yellow: #FDE68A; // Highlight warmth
+    --light-gray: #F3F4F6; // Light background
+
+    --surface-color: var(--light-gray);
 
     --gray-50: #f8f7f8;
     --gray-100: #f0eef0;

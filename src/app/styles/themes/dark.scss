@@ -1,29 +1,50 @@
 body.dark-theme {
-  --button-bg: #D2C1B6;          /* beige for contrast */
-  --button-bg-hover: #456882;    /* steel blue hover */
-  --button-bg-active: #234C6A;   /* blue-gray active */
-  --button-text: #1B3C53;        /* navy text for readability */
-  --button-border: #456882;      /* steel blue border */
+  --button-bg: #111827;
+  /* dark background */
+  --button-bg-hover: #00BBF9;
+  /* bright blue */
+  --button-bg-active: #FF0054;
+  /* vibrant pink */
+  --button-text: #F8F9FA;
+  /* light text */
+  --button-border: #FEE440;
+  /* yellow accent */
 
-  --background-color: #070d13;   /* even darker navy for main bg */
-  --text-color: #D2C1B6;         /* beige text stays readable */
+  --background-color: #111827;
+  /* dark background */
+  --text-color: #F8F9FA;
+  /* light text */
 
-  --header-background-color: #1B263B; /* distinct, lighter than bg */
-  --header-font-color: #D2C1B6;       /* beige text for contrast */
-  --footer-background-color: #1B263B; /* distinct, lighter than bg */
-  --footer-font-color: #D2C1B6;       /* beige text */
+  --header-background-color: #00BBF9;
+  /* bright blue */
+  --header-font-color: #111827;
+  /* dark text */
+  --footer-background-color: #FF0054;
+  /* vibrant pink */
+  --footer-font-color: #F8F9FA;
+  /* light text */
 
-  --primary-color: #456882;       /* steel blue primary */
-  --primary-color-light: #234C6A; /* lighter blue-gray */
-  --primary-color-dark: #1B3C53;  /* deep navy */
+  --primary-color: #00BBF9;
+  /* bright blue */
+  --primary-color-light: #FEE440;
+  /* yellow accent */
+  --primary-color-dark: #FF0054;
+  /* vibrant pink */
 
-  --secondary-color: #234C6A;     /* blue-gray secondary */
-  --secondary-color-light: #456882; /* steel blue */
-  --secondary-color-dark: #1B3C53;  /* navy depth */
+  --secondary-color: #34D399;
+  /* mint-green */
+  --secondary-color-light: #5EEAD4;
+  /* mint-light */
+  --secondary-color-dark: #FDE68A;
+  /* warm-yellow */
 
-  --accent-color: #D2C1B6;        /* beige accent */
-  --muted-color: #9D9D9D;         /* neutral muted tone */
+  --accent-color: #5EEAD4;
+  /* mint-light */
+  --muted-color: #FDE68A;
+  /* warm-yellow */
 
-  --border-color: #456882;        /* steel blue border */
-  --hover-overlay: rgb(210 193 182 / 15%); /* subtle beige overlay */
+  --border-color: #FDE68A;
+  /* warm-yellow */
+  --hover-overlay: rgba(94, 234, 212, 0.1);
+  /* subtle charcoal overlay */
 }

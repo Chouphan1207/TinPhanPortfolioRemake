@@ -1,6 +1,6 @@
 .gridSection {
   padding: 4rem var(--container-padding);
-  background: var(--background-color);
+
 }
 
 .bentoGrid {
@@ -24,8 +24,8 @@
 }
 
 .bentoItem {
-  background: rgb(255 255 255 / 5%);
-  border: 1px solid rgb(255 255 255 / 10%);
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 16px;
   backdrop-filter: blur(10px);
   transition: all 0.3s ease;
@@ -40,8 +40,8 @@
   position: relative;
 
   &:hover {
-    background: rgb(255 255 255 / 8%);
-    border-color: rgb(255 255 255 / 20%);
+    background: white;
+    border-color: rgba(0, 0, 0, 0.2);
     transform: translateY(-4px);
     box-shadow: 0 12px 40px rgb(0 0 0 / 15%);
   }
@@ -59,14 +59,14 @@
     margin: 0 0 0.5rem;
     font-size: 1.25rem;
     font-weight: 600;
-    color: var(--primary-color);
+    color: #333;
   }
 
   p {
     margin: 0;
     font-size: 0.875rem;
-    color: var(--text-color);
-    opacity: 0.8;
+    color: #666;
+    opacity: 1;
   }
 }
 

@@ -4,7 +4,7 @@ import { cn } from "@/shared/lib";
 
 type ButtonSize = "xs" | "sm" | "md" | "lg";
 type ButtonForm = "pill" | "rounded" | "circle";
-type ButtonTheme = "primary" | "secondary" | "tertiary" | "outline" | "ghost";
+type ButtonTheme = "primary" | "secondary" | "tertiary" | "outline" | "ghost" | "crush" | "btnHover";
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   children?: ReactNode;

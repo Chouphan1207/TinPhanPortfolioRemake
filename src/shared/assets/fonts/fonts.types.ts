@@ -1,13 +1,13 @@
 // Font family types
-export type FontFamily = 
-  | 'bungee'
+export type FontFamily =
+  | 'unbounded'
   | 'montserrat'
   | 'primary'
   | 'secondary'
   | 'mono';
 
 // Font weight types (Montserrat weights)
-export type FontWeight = 
+export type FontWeight =
   | 100  // thin
   | 200  // extralight
   | 300  // light
@@ -19,7 +19,7 @@ export type FontWeight =
   | 900  // black;
 
 // Font size types
-export type FontSize = 
+export type FontSize =
   | 'xs'
   | 'sm'
   | 'base'
@@ -35,7 +35,7 @@ export type FontSize =
   | '9xl';
 
 // Line height types
-export type LineHeight = 
+export type LineHeight =
   | 'tight'
   | 'snug'
   | 'normal'
@@ -43,7 +43,7 @@ export type LineHeight =
   | 'loose';
 
 // Typography preset types
-export type TypographyPreset = 
+export type TypographyPreset =
   | 'heading-display'
   | 'heading-1'
   | 'heading-2'
@@ -65,7 +65,7 @@ export interface FontConfig {
 
 // CSS custom properties mapping
 export const fontFamilies = {
-  bungee: 'var(--font-family-bungee)',
+  unbounded: 'var(--font-family-unbounded)',
   montserrat: 'var(--font-family-montserrat)',
   primary: 'var(--font-family-primary)',
   secondary: 'var(--font-family-secondary)',
