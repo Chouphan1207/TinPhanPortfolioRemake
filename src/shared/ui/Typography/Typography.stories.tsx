@@ -18,7 +18,7 @@ const meta = {
     },
     family: {
       control: "select",
-      options: ["bungee", "montserrat", "primary", "secondary", "mono"],
+      options: ["unbounded", "montserrat", "primary", "secondary", "mono"],
       description: "Font family",
     },
     weight: {
@@ -82,10 +82,10 @@ export const FontFamilies: Story = {
   },
   render: () => (
     <div className={styles.storyContainer}>
-      <Typography family="bungee" size="2xl">Bungee Font Family</Typography>
+      <Typography family="unbounded" size="2xl">Unbounded Font Family</Typography>
       <Typography family="montserrat" size="2xl">Montserrat Font Family</Typography>
       <Typography family="primary" size="2xl">Primary Font Family (Montserrat)</Typography>
-      <Typography family="secondary" size="2xl">Secondary Font Family (Bungee)</Typography>
+      <Typography family="secondary" size="2xl">Secondary Font Family (Unbounded)</Typography>
       <Typography family="mono" size="2xl">Monospace Font Family</Typography>
     </div>
   ),
@@ -124,7 +124,7 @@ export const SemanticPrefixes: Story = {
   render: () => (
     <div className={styles.storyContainer}>
       <div className={styles.storyRow}>
-        <h3>Bungee Font (bun- prefix)</h3>
+        <h3>Unbounded Font (unb- prefix)</h3>
         <Typography preset="heading-display">bun-heading-display</Typography>
       </div>
       <div className={styles.storyRow}>
