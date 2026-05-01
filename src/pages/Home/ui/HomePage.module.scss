@@ -2,6 +2,12 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background-image: url("@/shared/assets/images/backgrounds/bg-hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #000;
 }
 
 .content {
@@ -20,6 +26,18 @@
   align-items: center;
   position: relative;
   z-index: 1;
+}
+
+.leftContentPattern {
+  position: absolute;
+  inset: 0;
+  background-image: url("@/shared/assets/images/patterns/pat-leftcontent.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+  pointer-events: none;
+  z-index: -1;
 }
 
 .rightContent {

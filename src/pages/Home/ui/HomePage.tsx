@@ -1,7 +1,7 @@
 import styles from "./HomePage.module.scss";
 import { Header } from "@/widgets/Header";
 import { Footer } from "@/widgets/Footer";
-import { Button, Image } from "@/shared/ui";
+import { Button, Image, Typography } from "@/shared/ui";
 import { BentoGrid } from "@/shared/ui/Grid";
 import { bentoGridData } from "@/entities/portfolio";
 import mainImage from "@/shared/assets/icons/Main.jpg";
@@ -15,11 +15,14 @@ const HomePage = () => {
       <main className={styles.content}>
         <NoiseGridBackground showText={false} />
         <div className={styles.leftContent}>
+          <div className={styles.leftContentPattern} />
           <div className={styles.intro}>
-            <h1 className={styles.introTitle}>Welcome to My Portfolio</h1>
-            <p className={styles.introSubtitle}>
+            <Typography as="h1" preset="heading-1" className={styles.introTitle}>
+              Welcome to My Portfolio
+            </Typography>
+            <Typography as="p" preset="body-large" className={styles.introSubtitle}>
               Creating innovative digital experiences with modern web technologies
-            </p>
+            </Typography>
             <div className={styles.introButtons}>
               <Button theme="primary" size="md">View My Work</Button>
               <Button theme="outline" size="md">Get In Touch</Button>

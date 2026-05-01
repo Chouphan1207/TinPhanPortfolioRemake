@@ -1,6 +1,10 @@
-:root{
-    --font-family-main: 'Montserrat', sans-serif;
- --font-size-xl: 32px;
+// Import font system
+@import "@/shared/assets/fonts/fonts.scss";
+
+:root {
+    // Legacy font variables for backward compatibility
+    --font-family-main: var(--font-family-primary);
+    --font-size-xl: 32px;
     --font-line-xl: 40px;
     --font-xl: var(--font-size-xl) / var(--font-line-xl) var(--font-family-main);
     --font-size-l: 24px;
@@ -65,6 +69,3 @@
     --modal-z-index: 1000;
     --toast-z-index: 9999;
 }
-
-
-

@@ -1,29 +1,43 @@
-import type { Meta, StoryObj } from "@storybook/react-vite";
+import type { Meta, StoryObj } from '@storybook/react';
+import { Spinner } from './Spinner';
 
-import { Spinner } from "./Spinner";
-
-const meta = {
-  title: "shared/Spinner",
+const meta: Meta<typeof Spinner> = {
+  title: 'Shared/UI/Spinner',
   component: Spinner,
   parameters: {
-    layout: "centered",
+    layout: 'centered',
   },
-  tags: ["autodocs"],
-} satisfies Meta<typeof Spinner>;
+  tags: ['autodocs'],
+  argTypes: {
+    size: {
+      control: 'select',
+      options: ['small', 'medium', 'large'],
+      description: 'Size of the spinner',
+    },
+    className: {
+      control: 'text',
+      description: 'Additional CSS classes',
+    },
+  },
+};
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Default: Story = {};
-
-export const Large: Story = {
+export const Default: Story = {
   args: {
-    size: "lg",
+    size: 'medium',
   },
 };
 
 export const Small: Story = {
   args: {
-    size: "sm",
+    size: 'small',
+  },
+};
+
+export const Large: Story = {
+  args: {
+    size: 'large',
   },
 };

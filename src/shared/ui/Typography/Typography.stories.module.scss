@@ -1,0 +1,19 @@
+.storyContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 600px;
+  padding: 1rem;
+}
+
+.storyGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.storyRow {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}

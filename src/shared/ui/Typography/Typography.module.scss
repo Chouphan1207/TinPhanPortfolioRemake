@@ -1,0 +1,206 @@
+@import "@/shared/assets/fonts/fonts.scss";
+
+.preset-heading-display {
+  @extend .bun-heading-display;
+}
+
+.preset-heading-1 {
+  @extend .mst-heading-1;
+}
+
+.preset-heading-2 {
+  @extend .mst-heading-2;
+}
+
+.preset-heading-3 {
+  @extend .mst-heading-3;
+}
+
+.preset-heading-4 {
+  @extend .mst-heading-4;
+}
+
+.preset-body-large {
+  @extend .mst-body-large;
+}
+
+.preset-body-base {
+  @extend .mst-body-base;
+}
+
+.preset-body-small {
+  @extend .mst-body-small;
+}
+
+.preset-caption {
+  @extend .mst-caption;
+}
+
+// Font family classes with semantic prefixes
+.font-bungee {
+  @extend .bun;
+}
+
+.font-montserrat {
+  @extend .mst;
+}
+
+.font-primary {
+  @extend .mst;
+}
+
+.font-secondary {
+  @extend .bun;
+}
+
+.font-mono {
+  @extend .font-mono;
+}
+
+// Additional semantic classes for direct usage
+.bun-heading-display {
+  @extend .bun-heading-display;
+}
+
+.mst-heading-1 {
+  @extend .mst-heading-1;
+}
+
+.mst-heading-2 {
+  @extend .mst-heading-2;
+}
+
+.mst-heading-3 {
+  @extend .mst-heading-3;
+}
+
+.mst-heading-4 {
+  @extend .mst-heading-4;
+}
+
+.mst-body-large {
+  @extend .mst-body-large;
+}
+
+.mst-body-base {
+  @extend .mst-body-base;
+}
+
+.mst-body-small {
+  @extend .mst-body-small;
+}
+
+.mst-caption {
+  @extend .mst-caption;
+}
+
+// Font weight classes
+.font-weight-100 {
+  @extend .font-thin;
+}
+
+.font-weight-200 {
+  @extend .font-extralight;
+}
+
+.font-weight-300 {
+  @extend .font-light;
+}
+
+.font-weight-400 {
+  @extend .font-normal;
+}
+
+.font-weight-500 {
+  @extend .font-medium;
+}
+
+.font-weight-600 {
+  @extend .font-semibold;
+}
+
+.font-weight-700 {
+  @extend .font-bold;
+}
+
+.font-weight-800 {
+  @extend .font-extrabold;
+}
+
+.font-weight-900 {
+  @extend .font-black;
+}
+
+// Font size classes
+.text-xs {
+  @extend .text-xs;
+}
+
+.text-sm {
+  @extend .text-sm;
+}
+
+.text-base {
+  @extend .text-base;
+}
+
+.text-lg {
+  @extend .text-lg;
+}
+
+.text-xl {
+  @extend .text-xl;
+}
+
+.text-2xl {
+  @extend .text-2xl;
+}
+
+.text-3xl {
+  @extend .text-3xl;
+}
+
+.text-4xl {
+  @extend .text-4xl;
+}
+
+.text-5xl {
+  @extend .text-5xl;
+}
+
+.text-6xl {
+  @extend .text-6xl;
+}
+
+.text-7xl {
+  @extend .text-7xl;
+}
+
+.text-8xl {
+  @extend .text-8xl;
+}
+
+.text-9xl {
+  @extend .text-9xl;
+}
+
+// Line height classes
+.leading-tight {
+  @extend .leading-tight;
+}
+
+.leading-snug {
+  @extend .leading-snug;
+}
+
+.leading-normal {
+  @extend .leading-normal;
+}
+
+.leading-relaxed {
+  @extend .leading-relaxed;
+}
+
+.leading-loose {
+  @extend .leading-loose;
+}
