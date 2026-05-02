@@ -1,71 +1,29 @@
 body.dark-theme {
-  --button-bg: #491C3B;
+  --button-bg: #491c3b;              /* dark plum */
+  --button-bg-hover: #1dadd0;        /* bright turquoise */
+  --button-bg-active: #fa8a66;       /* warm coral-orange */
+  --button-text: #fff;               /* white text */
+  --button-border: #8ae4e8;          /* light cyan */
 
-  /* dark plum */
-  --button-bg-hover: #1DADD0;
+  --background-color: #1a1a1a;       /* very dark background */
+  --text-color: #8ae4e8;             /* light cyan text */
 
-  /* bright turquoise */
-  --button-bg-active: #FA8A66;
+  --header-background-color: #0962a2; /* deep blue */
+  --header-font-color: #fff;          /* white text */
+  --footer-background-color: #854545; /* muted reddish-brown */
+  --footer-font-color: #fff;          /* white text */
 
-  /* warm coral-orange */
-  --button-text: #FFFFFF;
+  --primary-color: #1dadd0;          /* bright turquoise */
+  --primary-color-light: #8ae4e8;    /* light cyan */
+  --primary-color-dark: #0962a2;     /* deep blue */
 
-  /* white text */
-  --button-border: #8AE4E8;
+  --secondary-color: #fa8a66;        /* warm coral-orange */
+  --secondary-color-light: #8ae4e8;  /* light cyan */
+  --secondary-color-dark: #854545;   /* muted reddish-brown */
 
-  /* light cyan */
+  --accent-color: #8ae4e8;           /* light cyan */
+  --muted-color: #854545;            /* muted reddish-brown */
 
-  --background-color: #1A1A1A;
-
-  /* very dark background */
-  --text-color: #8AE4E8;
-
-  /* light cyan text */
-
-  --header-background-color: #0962A2;
-
-  /* deep blue */
-  --header-font-color: #FFFFFF;
-
-  /* white text */
-  --footer-background-color: #854545;
-
-  /* muted reddish-brown */
-  --footer-font-color: #FFFFFF;
-
-  /* white text */
-
-  --primary-color: #1DADD0;
-
-  /* bright turquoise */
-  --primary-color-light: #8AE4E8;
-
-  /* light cyan */
-  --primary-color-dark: #0962A2;
-
-  /* deep blue */
-
-  --secondary-color: #FA8A66;
-
-  /* warm coral-orange */
-  --secondary-color-light: #8AE4E8;
-
-  /* light cyan */
-  --secondary-color-dark: #854545;
-
-  /* muted reddish-brown */
-
-  --accent-color: #8AE4E8;
-
-  /* light cyan */
-  --muted-color: #854545;
-
-  /* muted reddish-brown */
-
-  --border-color: #491C3B;
-
-  /* dark plum border */
-  --hover-overlay: rgb(26 173 208 / 15%);
-
-  /* subtle turquoise overlay */
+  --border-color: #491c3b;           /* dark plum border */
+  --hover-overlay: rgb(26 173 208 / 15%); /* subtle turquoise overlay */
 }

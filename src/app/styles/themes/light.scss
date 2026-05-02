@@ -1,71 +1,29 @@
 body.light-theme {
-  --button-bg: #908CA4;
+  --button-bg: #908ca4;              /* dusty lavender-gray */
+  --button-bg-hover: #57659e;        /* slate blue */
+  --button-bg-active: #ff5860;       /* vibrant coral-red */
+  --button-text: #fff;               /* white text */
+  --button-border: #c57284;          /* muted rose-pink */
 
-  /* dusty lavender-gray */
-  --button-bg-hover: #57659E;
+  --background-color: #f6deb8;       /* soft beige */
+  --text-color: #443e46;             /* deep muted gray text */
 
-  /* slate blue */
-  --button-bg-active: #FF5860;
+  --header-background-color: #57659e; /* slate blue */
+  --header-font-color: #fff;          /* white text */
+  --footer-background-color: #443e46; /* deep muted gray */
+  --footer-font-color: #fff;          /* white text */
 
-  /* vibrant coral-red */
-  --button-text: #FFFFFF;
+  --primary-color: #57659e;          /* slate blue */
+  --primary-color-light: #908ca4;    /* dusty lavender-gray */
+  --primary-color-dark: #443e46;     /* deep muted gray */
 
-  /* white text */
-  --button-border: #C57284;
+  --secondary-color: #c57284;        /* muted rose-pink */
+  --secondary-color-light: #f6deb8;  /* soft beige */
+  --secondary-color-dark: #ff5860;   /* vibrant coral-red */
 
-  /* muted rose-pink */
+  --accent-color: #c57284;           /* muted rose-pink */
+  --muted-color: #908ca4;            /* dusty lavender-gray */
 
-  --background-color: #F6DEB8;
-
-  /* soft beige */
-  --text-color: #443E46;
-
-  /* deep muted gray text */
-
-  --header-background-color: #57659E;
-
-  /* slate blue */
-  --header-font-color: #FFFFFF;
-
-  /* white text */
-  --footer-background-color: #443E46;
-
-  /* deep muted gray */
-  --footer-font-color: #FFFFFF;
-
-  /* white text */
-
-  --primary-color: #57659E;
-
-  /* slate blue */
-  --primary-color-light: #908CA4;
-
-  /* dusty lavender-gray */
-  --primary-color-dark: #443E46;
-
-  /* deep muted gray */
-
-  --secondary-color: #C57284;
-
-  /* muted rose-pink */
-  --secondary-color-light: #F6DEB8;
-
-  /* soft beige */
-  --secondary-color-dark: #FF5860;
-
-  /* vibrant coral-red */
-
-  --accent-color: #C57284;
-
-  /* muted rose-pink */
-  --muted-color: #908CA4;
-
-  /* dusty lavender-gray */
-
-  --border-color: #908CA4;
-
-  /* dusty lavender-gray */
-  --hover-overlay: rgb(87 101 158 / 10%);
-
-  /* subtle slate blue overlay */
+  --border-color: #908ca4;           /* dusty lavender-gray */
+  --hover-overlay: rgb(87 101 158 / 10%); /* subtle slate blue overlay */
 }

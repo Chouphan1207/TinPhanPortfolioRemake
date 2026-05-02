@@ -2,7 +2,6 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -19,18 +18,18 @@
   gap: var(--space-responsive-xl);
   position: relative;
 
-  // Responsive layout
-  @media (max-width: 992px) {
+  /* Responsive layout */
+  @media (width <= 992px) {
     flex-direction: column;
     text-align: center;
     gap: var(--space-responsive-2xl);
   }
 
-  @media (max-width: 768px) {
+  @media (width <= 768px) {
     padding: var(--space-responsive-2xl) var(--space-responsive-md);
   }
 
-  @media (max-width: 480px) {
+  @media (width <= 480px) {
     padding: var(--space-responsive-xl) var(--space-responsive-sm);
     gap: var(--space-responsive-lg);
   }
@@ -57,99 +56,6 @@
   background-repeat: no-repeat;
   opacity: 0.8;
   z-index: 2;
-
-
-  /* === ADJUSTMENT OPTIONS === */
-
-  /* Uncomment and modify these options to adjust the pattern: */
-
-  /* 1. POSITIONING OPTIONS */
-
-  /* Move pattern to specific positions: */
-
-  /* background-position: top left;     /* Top-left corner */
-
-  /* background-position: top right;    /* Top-right corner */
-
-  /* background-position: bottom left;  /* Bottom-left corner */
-
-  /* background-position: bottom right; /* Bottom-right corner */
-
-  /* background-position: 20% 30%;      /* Custom position (x y) */
-
-  /* 2. SIZE OPTIONS */
-
-  /* Control how the pattern scales: */
-
-  /* background-size: contain;          /* Fit entire pattern */
-
-  /* background-size: 100% 100%;       /* Exact size */
-
-  /* background-size: 150% 150%;       /* 150% zoom */
-
-  /* background-size: 50px 50px;        /* Fixed pixel size */
-
-  /* background-size: auto;             /* Natural size */
-
-  /* 3. REPEAT OPTIONS */
-
-  /* Control pattern repetition: */
-
-  /* background-repeat: repeat;         /* Tile both directions */
-
-  /* background-repeat: repeat-x;       /* Tile horizontally only */
-
-  /* background-repeat: repeat-y;       /* Tile vertically only */
-
-  /* 4. PLACEMENT OPTIONS */
-
-  /* Move pattern to specific areas: */
-
-  /* inset: 20px;                       /* 20px from all edges */
-
-  /* inset: 10px 20px 30px 40px;        /* Top Right Bottom Left */
-
-  /* top: 0; left: 0; right: auto; bottom: auto; /* Top-left only */
-
-  /* top: 50%; left: 50%; transform: translate(-50%, -50%); /* Center */
-
-  /* 5. VISIBILITY OPTIONS */
-
-  /* Adjust pattern appearance: */
-
-  /* opacity: 0.1;                     /* More transparent */
-
-  /* opacity: 0.5;                     /* More visible */
-
-  /* opacity: 0.8;                     /* Very visible */
-
-  /* mix-blend-mode: multiply;         /* Blend with background */
-
-  /* mix-blend-mode: overlay;          /* Overlay blend */
-
-  /* filter: brightness(1.2);          /* Brighter */
-
-  /* filter: contrast(0.8);            /* Less contrast */
-
-  /* 6. CLIPPING OPTIONS */
-
-  /* Control pattern visibility area: */
-
-  /* border-radius: 10px;              /* Rounded corners */
-
-  /* clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); /* Custom shape */
-
-  /* 7. TRANSFORMATION OPTIONS */
-
-  /* Transform the pattern: */
-
-  /* transform: scale(1.2);            /* Zoom in */
-
-  /* transform: scale(0.8);            /* Zoom out */
-
-  /* transform: rotate(15deg);         /* Rotate */
-
-  /* transform: skewX(10deg);          /* Skew horizontally */
 }
 
 .rightContent {
@@ -175,12 +81,12 @@
   margin-bottom: var(--space-responsive-xl);
   color: var(--primary-color);
 
-  @media (max-width: 768px) {
+  @media (width <= 768px) {
     font-size: var(--font-size-responsive-4xl);
     margin-bottom: var(--space-responsive-lg);
   }
 
-  @media (max-width: 480px) {
+  @media (width <= 480px) {
     font-size: var(--font-size-responsive-3xl);
     margin-bottom: var(--space-responsive-md);
   }
@@ -193,12 +99,12 @@
   color: var(--text-color);
   opacity: 0.8;
 
-  @media (max-width: 768px) {
+  @media (width <= 768px) {
     font-size: var(--font-size-responsive-md);
     margin-bottom: var(--space-responsive-xl);
   }
 
-  @media (max-width: 480px) {
+  @media (width <= 480px) {
     font-size: var(--font-size-responsive-sm);
     margin-bottom: var(--space-responsive-lg);
   }
@@ -211,7 +117,7 @@
   justify-content: center;
   align-items: center;
 
-  @media (max-width: 480px) {
+  @media (width <= 480px) {
     flex-direction: column;
     align-items: center;
     gap: var(--space-responsive-sm);
@@ -225,15 +131,15 @@
   opacity: 0.95;
   filter: blur(0.5px);
 
-  @media (max-width: 992px) {
+  @media (width <= 992px) {
     max-width: 300px;
   }
 
-  @media (max-width: 768px) {
+  @media (width <= 768px) {
     max-width: 250px;
   }
 
-  @media (max-width: 480px) {
+  @media (width <= 480px) {
     max-width: 200px;
   }
 }
