@@ -195,7 +195,7 @@
 .btnHover::before {
   content: "";
   position: absolute;
-  inset: auto 0 0 0; /* shorthand for bottom edge */
+  inset: auto 0 0; /* shorthand fixed */
   height: 2px;
   width: 0;
   background-color: var(--button-bg-active);
@@ -215,7 +215,7 @@
 .btnHover::after {
   content: "";
   position: absolute;
-  inset: auto 0 0 0; /* shorthand for bottom edge */
+  inset: auto 0 0; /* shorthand fixed */
   height: 0;
   width: 100%;
   background-color: var(--button-bg-active);
