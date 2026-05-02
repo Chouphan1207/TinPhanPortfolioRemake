@@ -9,9 +9,9 @@
   cursor: pointer;
   padding: 0;
   z-index: 1001;
-  
-  // Show hamburger on mobile
-  @media (max-width: 768px) {
+
+  /* Show hamburger on mobile */
+  @media (width <= 768px) {
     display: flex;
   }
 }
@@ -24,23 +24,23 @@
   transform-origin: center;
 }
 
-// Open state animation
+/* Open state animation */
 .hamburger.open {
   .line:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
   }
-  
+
   .line:nth-child(2) {
     opacity: 0;
     transform: scale(0);
   }
-  
+
   .line:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
 }
 
-// Hover states
+/* Hover states */
 .hamburger:hover .line {
   background-color: var(--primary-color);
 }

@@ -1,245 +1,238 @@
 .button {
-    width: max-content;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    cursor: pointer;
-    border: none;
-    border-radius: 8px;
-    transition: all 0.2s linear;
-    color: var(--black);
-    outline: none;
-    padding: var(--space-responsive-sm) var(--space-responsive-lg);
-    font-weight: 600;
-    font-family: inherit;
-    font-size: var(--font-size-responsive-md);
-    line-height: 1.5;
+  width: max-content;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  transition: all 0.2s linear;
+  color: var(--black);
+  outline: none;
+  padding: var(--space-responsive-sm) var(--space-responsive-lg);
+  font-weight: 600;
+  font-family: inherit;
+  font-size: var(--font-size-responsive-md);
+  line-height: 1.5;
 
-    @media (max-width: 768px) {
-        padding: var(--space-responsive-sm) var(--space-responsive-md);
-        font-size: var(--font-size-responsive-sm);
-    }
+  @media (width <= 768px) {
+    padding: var(--space-responsive-sm) var(--space-responsive-md);
+    font-size: var(--font-size-responsive-sm);
+  }
 
-    @media (max-width: 480px) {
-        padding: var(--space-responsive-xs) var(--space-responsive-sm);
-        font-size: var(--font-size-responsive-xs);
-        width: 100%;
-    }
+  @media (width <= 480px) {
+    padding: var(--space-responsive-xs) var(--space-responsive-sm);
+    font-size: var(--font-size-responsive-xs);
+    width: 100%;
+  }
 
-    svg {
-        fill: var(--white);
-    }
+  svg {
+    fill: var(--white);
+  }
 
-    &:hover {
-        background-color: var(--primary-color-dark);
-    }
+  &:hover {
+    background-color: var(--primary-color-dark);
+  }
 }
 
 .primary {
-    background-color: var(--primary-color);
-    color: var(--white);
+  background-color: var(--primary-color);
+  color: var(--white);
 
-    svg {
-        fill: var(--white);
-    }
+  svg {
+    fill: var(--white);
+  }
 
-    &:hover {
-        background-color: var(--primary-color-dark);
-    }
+  &:hover {
+    background-color: var(--primary-color-dark);
+  }
 }
 
 .secondary {
-    background-color: var(--primary-color-light);
-    border: 1px solid var(--primary-color-light);
+  background-color: var(--primary-color-light);
+  border: 1px solid var(--primary-color-light);
 
-    &:hover {
-        border-color: var(--primary-color);
-    }
+  &:hover {
+    border-color: var(--primary-color);
+  }
 }
 
 .tertiary {
-    background-color: var(--white);
-    border: 1px solid var(--gray-100);
+  background-color: var(--white);
+  border: 1px solid var(--gray-100);
 
-    &:hover {
-        background-color: var(--gray-50);
-        border-color: var(--gray-200);
-    }
+  &:hover {
+    background-color: var(--gray-50);
+    border-color: var(--gray-200);
+  }
 }
 
 .outline {
-    background-color: var(--white);
-    border: 1px solid var(--primary-color);
+  background-color: var(--white);
+  border: 1px solid var(--primary-color);
 
-    &:hover {
-        background-color: var(--primary-color-light);
-        border-color: var(--primary-color-dark);
-    }
+  &:hover {
+    background-color: var(--primary-color-light);
+    border-color: var(--primary-color-dark);
+  }
 
-    &.disabled {
-        border-color: var(--gray-200);
-    }
+  &.disabled {
+    border-color: var(--gray-200);
+  }
 }
 
 .disabled {
-    color: var(--gray-400);
-    background-color: var(--gray-200);
-    pointer-events: none;
+  color: var(--gray-400);
+  background-color: var(--gray-200);
+  pointer-events: none;
 
-    svg {
-        fill: var(--gray-400);
-    }
+  svg {
+    fill: var(--gray-400);
+  }
 }
 
 .pill {
-    border-radius: 39px;
+  border-radius: 39px;
 }
 
 .circle {
-    border-radius: 100%;
-    flex-shrink: 0;
+  border-radius: 100%;
+  flex-shrink: 0;
 }
 
 .xs {
-    padding: 8px 16px;
-    font: var(--font-xs);
+  padding: 8px 16px;
+  font: var(--font-xs);
 
-    svg {
-        height: 16px;
-        width: 16px;
-    }
+  svg {
+    height: 16px;
+    width: 16px;
+  }
 
-    &.circle {
-        width: 32px;
-        height: 32px;
-        padding: 0;
-    }
+  &.circle {
+    width: 32px;
+    height: 32px;
+    padding: 0;
+  }
 }
 
 .sm {
-    padding: 10px 20px;
-    font: var(--font-s);
+  padding: 10px 20px;
+  font: var(--font-s);
 
-    svg {
-        height: 18px;
-        width: 18px;
-    }
+  svg {
+    height: 18px;
+    width: 18px;
+  }
 
-    &.circle {
-        width: 40px;
-        height: 40px;
-        padding: 0;
-    }
+  &.circle {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+  }
 }
 
 .md {
-    padding: 12px 24px;
-    font: var(--font-m);
+  padding: 12px 24px;
+  font: var(--font-m);
 
-    svg {
-        height: 20px;
-        width: 20px;
-    }
+  svg {
+    height: 20px;
+    width: 20px;
+  }
 
-    &.circle {
-        width: 44px;
-        height: 44px;
-        padding: 0;
-    }
+  &.circle {
+    width: 44px;
+    height: 44px;
+    padding: 0;
+  }
 }
 
 .lg {
-    padding: 16px 32px;
-    font: var(--font-base);
+  padding: 16px 32px;
+  font: var(--font-base);
 
-    svg {
-        height: 24px;
-        width: 24px;
-    }
+  svg {
+    height: 24px;
+    width: 24px;
+  }
 
-    &.circle {
-        width: 56px;
-        height: 56px;
-        padding: 0;
-    }
+  &.circle {
+    width: 56px;
+    height: 56px;
+    padding: 0;
+  }
 }
 
 .xs,
 .sm,
 .md,
 .lg {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 .ghost {
-    background-color: transparent;
-    border: none;
-    padding: 0;
-    font-weight: 500;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  font-weight: 500;
 }
 
 .btnHover {
-    font-size: 17px;
-    background: transparent;
-    border: none;
-    padding: 1em 1.5em;
-    color: var(--button-bg-hover);
-    text-transform: uppercase;
-    position: relative;
-    transition: 0.5s ease;
-    cursor: pointer;
-    border-radius: 0;
+  font-size: 17px;
+  background: transparent;
+  border: none;
+  padding: 1em 1.5em;
+  color: var(--button-bg-hover);
+  text-transform: uppercase;
+  position: relative;
+  transition: 0.5s ease;
+  cursor: pointer;
+  border-radius: 0;
 }
 
 .btnHover::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 2px;
-    width: 0;
-    background-color: var(--button-bg-active);
-    transition: 0.5s ease;
-
+  content: "";
+  position: absolute;
+  inset: auto 0 0 0; /* shorthand for bottom edge */
+  height: 2px;
+  width: 0;
+  background-color: var(--button-bg-active);
+  transition: 0.5s ease;
 }
 
 .btnHover:hover {
-    color: var(--secondary-color-light);
-    transition-delay: 0.5s;
-    border-radius: 0;
+  color: var(--secondary-color-light);
+  transition-delay: 0.5s;
+  border-radius: 0;
 }
 
 .btnHover:hover::before {
-    width: 100%;
+  width: 100%;
 }
 
 .btnHover::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 0;
-    width: 100%;
-    background-color: var(--button-bg-active);
-    transition: 0.4s ease;
-    z-index: -1;
-
+  content: "";
+  position: absolute;
+  inset: auto 0 0 0; /* shorthand for bottom edge */
+  height: 0;
+  width: 100%;
+  background-color: var(--button-bg-active);
+  transition: 0.4s ease;
+  z-index: -1;
 }
 
 .btnHover:hover::after {
-    height: 100%;
-    transition-delay: 0.4s;
-    color: aliceblue;
+  height: 100%;
+  transition-delay: 0.4s;
+  color: aliceblue;
 }
-
-
 
 svg {
-    fill: #FFF;
+  fill: #fff;
 }
 
-
 .fullWidth {
-    width: 100%;
+  width: 100%;
 }
