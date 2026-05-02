@@ -17,7 +17,7 @@ i18n
     supportedLngs,
 
     backend: {
-      loadPath: "/locales/{{lng}}/{{ns}}.json"
+      loadPath: "/locales/{{lng}}/translation.json"
     },
 
     detection: {

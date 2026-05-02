@@ -3,6 +3,7 @@ import type { Preview } from "@storybook/react-vite";
 import {
   RouterDecorator,
   LanguageDecorator,
+  ThemeDecorator,
 } from "../src/shared/config/storybook";
 
 import "../src/app/styles/index.scss";
@@ -22,6 +23,19 @@ const preview: Preview = {
       },
       defaultValue: "en",
     },
+    theme: {
+      name: "Theme",
+      description: "Global theme for components",
+      toolbar: {
+        icon: "paintbrush",
+        items: [
+          { value: "light-theme", title: "Light" },
+          { value: "dark-theme", title: "Dark" },
+        ],
+        dynamicTitle: true,
+      },
+      defaultValue: "light-theme",
+    },
   },
   parameters: {
     controls: {
@@ -39,6 +53,7 @@ const preview: Preview = {
     },
   },
   decorators: [
+    ThemeDecorator,
     RouterDecorator,
     // LanguageDecorator, // Temporarily removed for debugging
   ],

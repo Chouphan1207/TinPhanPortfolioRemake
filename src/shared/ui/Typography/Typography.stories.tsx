@@ -63,7 +63,7 @@ export const Presets: Story = {
   },
   render: () => (
     <div className={styles.storyContainer}>
-      <Typography preset="heading-display">Display Heading (Bungee)</Typography>
+      <Typography preset="heading-display">Display Heading (Unbounded)</Typography>
       <Typography preset="heading-1">Heading 1 (Montserrat)</Typography>
       <Typography preset="heading-2">Heading 2 (Montserrat)</Typography>
       <Typography preset="heading-3">Heading 3 (Montserrat)</Typography>
@@ -125,7 +125,7 @@ export const SemanticPrefixes: Story = {
     <div className={styles.storyContainer}>
       <div className={styles.storyRow}>
         <h3>Unbounded Font (unb- prefix)</h3>
-        <Typography preset="heading-display">bun-heading-display</Typography>
+        <Typography preset="heading-display">unb-heading-display</Typography>
       </div>
       <div className={styles.storyRow}>
         <h3>Montserrat Font (mst- prefix)</h3>

@@ -5,12 +5,25 @@
 
 .bentoGrid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  gap: 1.5rem;
-  max-width: 1200px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-responsive-lg);
+  padding: var(--space-responsive-xl);
+  max-width: var(--container-xl);
   margin: 0 auto;
   grid-auto-flow: dense;
+
+  // Responsive grid adjustments
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: var(--space-responsive-md);
+    padding: var(--space-responsive-lg);
+  }
+
+  @media (max-width: 480px) {
+    grid-template-columns: 1fr;
+    gap: var(--space-responsive-sm);
+    padding: var(--space-responsive-md);
+  }
 
   @media (width >=768px) and (width < 1024px) {
     grid-template-columns: repeat(3, 1fr);

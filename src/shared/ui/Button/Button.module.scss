@@ -10,6 +10,30 @@
     transition: all 0.2s linear;
     color: var(--black);
     outline: none;
+    padding: var(--space-responsive-sm) var(--space-responsive-lg);
+    font-weight: 600;
+    font-family: inherit;
+    font-size: var(--font-size-responsive-md);
+    line-height: 1.5;
+
+    @media (max-width: 768px) {
+        padding: var(--space-responsive-sm) var(--space-responsive-md);
+        font-size: var(--font-size-responsive-sm);
+    }
+
+    @media (max-width: 480px) {
+        padding: var(--space-responsive-xs) var(--space-responsive-sm);
+        font-size: var(--font-size-responsive-xs);
+        width: 100%;
+    }
+
+    svg {
+        fill: var(--white);
+    }
+
+    &:hover {
+        background-color: var(--primary-color-dark);
+    }
 }
 
 .primary {
@@ -165,6 +189,7 @@
     position: relative;
     transition: 0.5s ease;
     cursor: pointer;
+    border-radius: 0;
 }
 
 .btnHover::before {
@@ -176,11 +201,13 @@
     width: 0;
     background-color: var(--button-bg-active);
     transition: 0.5s ease;
+
 }
 
 .btnHover:hover {
     color: var(--secondary-color-light);
     transition-delay: 0.5s;
+    border-radius: 0;
 }
 
 .btnHover:hover::before {
@@ -197,6 +224,7 @@
     background-color: var(--button-bg-active);
     transition: 0.4s ease;
     z-index: -1;
+
 }
 
 .btnHover:hover::after {

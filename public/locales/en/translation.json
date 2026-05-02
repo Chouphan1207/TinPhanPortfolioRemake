@@ -1,14 +1,14 @@
 {
-  "header":{
+  "header": {
     "searchBy": "Search by",
     "cart": "Cart",
     "login": "Login"
   },
-  "footer":{
+  "footer": {
     "about": "About",
     "aboutUs": "About Us",
-  "ourBranches": "Our Branches",
-  "changeLog": "Changelog",
+    "ourBranches": "Our Branches",
+    "changeLog": "Changelog",
     "quickLinks": "Quick Links",
     "faqs": "FAQs",
     "recipes": "Recipes",
@@ -29,14 +29,20 @@
   "pageLoader": {
     "loading": "   Loading..."
   },
-  "pageError":{
+  "pageError": {
     "title": "Something went wrong",
     "description": "Sorry for unexpected error occurred. Please refresh the page or come back later",
-    "reload":"Try again"
+    "reload": "Try again"
   },
-    "notFound":{
+  "notFound": {
     "title": "Something went wrong",
     "description": "Sorry for unexpected error occurred. Please refresh the page or come back later",
-    "goBack":"Go Back"
+    "goBack": "Go Back"
+  },
+  "homePage": {
+    "welcomeTitle": "Welcome to My Portfolio",
+    "welcomeSubtitle": "Creating innovative digital experiences with modern web technologies",
+    "viewWork": "View My Work",
+    "getInTouch": "Get In Touch"
   }
 }

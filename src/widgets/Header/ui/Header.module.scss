@@ -3,7 +3,7 @@
     backdrop-filter: blur(5px) saturate(110%);
     border-bottom: 1px solid rgb(255 255 255 / 10%);
     color: var(--header-font-color);
-    padding: 10px var(--container-padding);
+    padding: var(--space-responsive-sm) var(--space-responsive-lg);
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -11,6 +11,17 @@
     position: sticky;
     top: 0;
     z-index: 1000;
+
+    // Responsive adjustments
+    @media (max-width: 768px) {
+        padding: var(--space-responsive-sm) var(--space-responsive-md);
+        flex-wrap: wrap;
+        gap: var(--space-responsive-sm);
+    }
+
+    @media (max-width: 480px) {
+        padding: var(--space-responsive-xs) var(--space-responsive-sm);
+    }
 }
 
 .logoSection {
@@ -22,36 +33,69 @@
 .navSection {
     display: flex;
     align-items: center;
-    gap: 24px;
+    gap: var(--space-responsive-lg);
     flex: 1 1 auto;
     justify-content: center;
+
+    // Hide on mobile - use sidebar instead
+    @media (max-width: 768px) {
+        display: none;
+    }
+
+    @media (max-width: 480px) {
+        gap: var(--space-responsive-sm);
+        font-size: var(--font-size-responsive-sm);
+    }
 }
 
 .navLink {
     color: var(--header-font-color);
     text-decoration: none;
-    font-size: 14px;
+    font-size: var(--font-size-responsive-sm);
     font-weight: 700;
     letter-spacing: 0.5px;
     transition: opacity 0.2s ease;
+    padding: var(--space-responsive-xs) var(--space-responsive-sm);
+    border-radius: var(--radius-responsive-sm);
 
     &:hover {
         opacity: 0.8;
+        background: rgba(255 255 255 / 10%);
     }
 
     &:active,
     &.active {
         text-decoration: underline;
     }
+
+    @media (max-width: 480px) {
+        font-size: var(--font-size-responsive-xs);
+        padding: var(--space-responsive-xs);
+    }
 }
 
 .controlsSection {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: var(--space-responsive-lg);
     flex: 0 0 auto;
+
+    // Hide on mobile - use sidebar instead
+    @media (max-width: 768px) {
+        display: none;
+    }
 }
 
 .logo {
     fill: var(--header-background-color);
+    max-width: 120px;
+    height: auto;
+
+    @media (max-width: 768px) {
+        max-width: 100px;
+    }
+
+    @media (max-width: 480px) {
+        max-width: 80px;
+    }
 }

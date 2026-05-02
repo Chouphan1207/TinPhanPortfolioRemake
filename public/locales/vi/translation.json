@@ -8,7 +8,7 @@
     "about": "Giới thiệu",
     "aboutUs": "Về chúng tôi",
     "ourBranches": "Chi nhánh",
-   "changeLog": "Nhật ký thay đổi",
+    "changeLog": "Nhật ký thay đổi",
     "quickLinks": "Liên kết nhanh",
     "faqs": "Câu hỏi thường gặp",
     "recipes": "Công thức",
@@ -29,14 +29,20 @@
   "pageLoader": {
     "loading": "   Đang tải..."
   },
-  "pageError":{
+  "pageError": {
     "title": "Đã xảy ra sự cố",
     "description": "Xin lỗi, đã xảy ra lỗi bất ngờ. Vui lòng làm mới trang hoặc quay lại sau",
     "reload": "Thử lại"
   },
-    "notFound":{
+  "notFound": {
     "title": "Đã xảy ra sự cố",
     "description": "Xin lỗi, trang này không tồn tại. Vui lòng quay lại trang trước",
-    "goBack":"Quay lại"
+    "goBack": "Quay lại"
+  },
+  "homePage": {
+    "welcomeTitle": "Chào mừng đến với Portfolio của tôi",
+    "welcomeSubtitle": "Tạo ra những trải nghiệm kỹ thuật số sáng tạo với công nghệ web hiện đại",
+    "viewWork": "Xem Công Việc Của Tôi",
+    "getInTouch": "Liên Hệ"
   }
 }

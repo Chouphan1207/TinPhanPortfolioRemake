@@ -1,71 +1,71 @@
 body.light-theme {
-  --button-bg: #F8F9FA;
+  --button-bg: #908CA4;
 
-  /* light background */
-  --button-bg-hover: #00BBF9;
+  /* dusty lavender-gray */
+  --button-bg-hover: #57659E;
 
-  /* bright blue */
-  --button-bg-active: #FF0054;
+  /* slate blue */
+  --button-bg-active: #FF5860;
 
-  /* vibrant pink */
-  --button-text: #111827;
+  /* vibrant coral-red */
+  --button-text: #FFFFFF;
 
-  /* dark text */
-  --button-border: #FEE440;
+  /* white text */
+  --button-border: #C57284;
 
-  /* yellow accent */
+  /* muted rose-pink */
 
-  --background-color: #F8F9FA;
+  --background-color: #F6DEB8;
 
-  /* light background */
-  --text-color: #111827;
+  /* soft beige */
+  --text-color: #443E46;
 
-  /* dark text */
+  /* deep muted gray text */
 
-  --header-background-color: #00BBF9;
+  --header-background-color: #57659E;
 
-  /* bright blue */
-  --header-font-color: #111827;
+  /* slate blue */
+  --header-font-color: #FFFFFF;
 
-  /* dark text */
-  --footer-background-color: #FF0054;
+  /* white text */
+  --footer-background-color: #443E46;
 
-  /* vibrant pink */
-  --footer-font-color: #F8F9FA;
+  /* deep muted gray */
+  --footer-font-color: #FFFFFF;
 
-  /* light text */
+  /* white text */
 
-  --primary-color: #00BBF9;
+  --primary-color: #57659E;
 
-  /* bright blue */
-  --primary-color-light: #FEE440;
+  /* slate blue */
+  --primary-color-light: #908CA4;
 
-  /* yellow accent */
-  --primary-color-dark: #FF0054;
+  /* dusty lavender-gray */
+  --primary-color-dark: #443E46;
 
-  /* vibrant pink */
+  /* deep muted gray */
 
-  --secondary-color: #34D399;
+  --secondary-color: #C57284;
 
-  /* mint-green */
-  --secondary-color-light: #5EEAD4;
+  /* muted rose-pink */
+  --secondary-color-light: #F6DEB8;
 
-  /* mint-light */
-  --secondary-color-dark: #FDE68A;
+  /* soft beige */
+  --secondary-color-dark: #FF5860;
 
-  /* warm-yellow */
+  /* vibrant coral-red */
 
-  --accent-color: #5EEAD4;
+  --accent-color: #C57284;
 
-  /* mint-light */
-  --muted-color: #FDE68A;
+  /* muted rose-pink */
+  --muted-color: #908CA4;
 
-  /* warm-yellow */
+  /* dusty lavender-gray */
 
-  --border-color: #FDE68A;
+  --border-color: #908CA4;
 
-  /* warm-yellow */
-  --hover-overlay: rgb(241 253 181 / 10%);
+  /* dusty lavender-gray */
+  --hover-overlay: rgb(87 101 158 / 10%);
 
-  /* subtle mint overlay */
+  /* subtle slate blue overlay */
 }
