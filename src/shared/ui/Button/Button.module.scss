@@ -37,7 +37,7 @@
   svg {
     height: 1em;
     width: 1em;
-    fill: currentColor;
+    fill: currentcolor;
   }
 }
 
@@ -52,7 +52,6 @@
 }
 
 .secondary {
-
   background-color: var(--white);
   border: 1px solid var(--primary-color);
   color: var(--primary-color);
@@ -121,6 +120,7 @@
   width: 100%;
 }
 
+/* Hover variant */
 .btnHover {
   font-size: 17px;
   background: transparent;
@@ -138,7 +138,6 @@
   content: "";
   position: absolute;
   inset: auto 0 0;
-  /* shorthand fixed */
   height: 2px;
   width: 0;
   background-color: var(--button-bg-active);
@@ -159,7 +158,6 @@
   content: "";
   position: absolute;
   inset: auto 0 0;
-  /* shorthand fixed */
   height: 0;
   width: 100%;
   background-color: var(--button-bg-active);
