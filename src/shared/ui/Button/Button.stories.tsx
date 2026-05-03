@@ -1,36 +1,45 @@
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from "@storybook/react-vite";
 import { Button } from "./Button";
 
 const meta = {
-  title: "Shared/UI/Button",
+  title: "shared/Button",
   component: Button,
   parameters: {
     layout: "centered",
-    docs: {
-      description: {
-        component: "Customizable button component with multiple themes, sizes, and hover effects.",
-      },
-    },
   },
   tags: ["autodocs"],
+  args: { children: "Button" },
   argTypes: {
     theme: {
-      control: "select",
-      options: ["btnHover", "primary", "secondary"],
+      control: { type: "select" },
+      options: [
+        "button",     // base style
+        "btnHover",   // hover effect variant
+        "primary",
+        "secondary",
+        "tertiary",
+        "outline",
+        "ghost",
+      ],
       description: "Button theme/style variant",
     },
     size: {
-      control: "select",
-      options: ["sm", "md", "lg"],
+      control: { type: "select" },
+      options: ["xs", "sm", "md", "lg"],
       description: "Button size",
     },
-    children: {
-      control: "text",
-      description: "Button text content",
+    form: {
+      control: { type: "select" },
+      options: ["pill", "circle", "rounded", "fullWidth"],
+      description: "Button shape modifier",
     },
     disabled: {
-      control: "boolean",
-      description: "Whether the button is disabled",
+      control: { type: "boolean" },
+      description: "Disable the button",
+    },
+    children: {
+      control: { type: "text" },
+      description: "Button text content",
     },
     onClick: {
       action: "clicked",
@@ -42,64 +51,43 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Default: Story = {
-  args: {
-    theme: "btnHover",
-    size: "md",
-    children: "Click me",
-  },
-};
+/* Theme Variants */
+export const BtnHover: Story = { args: { theme: "btnHover" } };
+export const Primary: Story = { args: { theme: "primary" } };
+export const Secondary: Story = { args: { theme: "secondary" } };
+export const Tertiary: Story = { args: { theme: "tertiary" } };
+export const Outline: Story = { args: { theme: "outline" } };
+export const Ghost: Story = { args: { theme: "ghost" } };
 
-export const Primary: Story = {
-  args: {
-    theme: "primary",
-    size: "md",
-    children: "Primary Button",
-  },
-};
+/* Sizes */
+export const ExtraSmall: Story = { args: { size: "xs" } };
+export const Small: Story = { args: { size: "sm" } };
+export const Medium: Story = { args: { size: "md" } };
+export const Large: Story = { args: { size: "lg" } };
 
-export const Secondary: Story = {
-  args: {
-    theme: "secondary",
-    size: "md",
-    children: "Secondary Button",
-  },
-};
+/* Forms */
+export const Pill: Story = { args: { form: "pill" } };
+export const Circle: Story = { args: { form: "circle" } };
+export const Rounded: Story = { args: { form: "rounded" } };
 
-export const Small: Story = {
-  args: {
-    theme: "btnHover",
-    size: "sm",
-    children: "Small Button",
-  },
-};
+/* States */
+export const Disabled: Story = { args: { disabled: true } };
 
-export const Large: Story = {
-  args: {
-    theme: "btnHover",
-    size: "lg",
-    children: "Large Button",
-  },
-};
-
-export const Disabled: Story = {
-  args: {
-    theme: "btnHover",
-    size: "md",
-    children: "Disabled Button",
-    disabled: true,
-  },
-};
-
+/* Showcase */
 export const AllVariants: Story = {
   render: () => (
-    // eslint-disable-next-line react/forbid-component-props
     <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap", alignItems: "center" }}>
-      <Button theme="btnHover" size="sm">Small Hover</Button>
-      <Button theme="btnHover" size="md">Medium Hover</Button>
-      <Button theme="btnHover" size="lg">Large Hover</Button>
+      <Button theme="btnHover" size="sm">Hover Small</Button>
+      <Button theme="btnHover" size="md">Hover Medium</Button>
+      <Button theme="btnHover" size="lg">Hover Large</Button>
       <Button theme="primary" size="md">Primary</Button>
       <Button theme="secondary" size="md">Secondary</Button>
+      <Button theme="tertiary" size="md">Tertiary</Button>
+      <Button theme="outline" size="md">Outline</Button>
+      <Button theme="ghost" size="md">Ghost</Button>
+      <Button theme="primary" size="md" form="pill">Pill</Button>
+      <Button theme="primary" size="md" form="circle">Circle</Button>
+      <Button theme="primary" size="md" form="rounded">Rounded</Button>
       <Button theme="btnHover" size="md" disabled>Disabled</Button>
     </div>
   ),

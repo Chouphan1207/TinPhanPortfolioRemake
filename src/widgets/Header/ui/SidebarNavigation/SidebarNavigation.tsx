@@ -22,7 +22,7 @@ export const SidebarNavigation = ({ isOpen, onClose }: SidebarNavigationProps) =
       <div 
         className={`${styles.overlay} ${isOpen ? styles.open : ''}`}
         onClick={onClose}
-        aria-hidden={isOpen ? "false" : "true"}
+        aria-hidden={!isOpen}
       />
       
       {/* Sidebar */}
