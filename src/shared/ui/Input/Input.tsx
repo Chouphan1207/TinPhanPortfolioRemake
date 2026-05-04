@@ -1,28 +1,32 @@
-import { cn } from "@/shared/lib";
-import {
+import React, {
+  forwardRef,
   useState,
   type ChangeEvent,
+  type FocusEvent,
   type InputHTMLAttributes,
   type ReactNode,
 } from "react";
+import { cn } from "@/shared/lib";
 import style from "./Input.module.scss";
 import { Button } from "../Button/Button";
 import HideIcon from "@/shared/assets/icons/Hide.svg?react";
 import ShowIcon from "@/shared/assets/icons/Show.svg?react";
 
-type HTMLInputType = Omit<InputHTMLAttributes<HTMLInputElement>, "onChange">;
+type HTMLInputProps = Omit<InputHTMLAttributes<HTMLInputElement>, "onChange">;
 
-interface InputProps extends HTMLInputType {
+export interface InputProps extends HTMLInputProps {
   className?: string;
   disabled?: boolean;
   rounded?: boolean;
   Icon?: ReactNode;
+  error?: boolean;
+  label?: string;
   onChange?: (value: string) => void;
 }
 
-export const Input = (props: InputProps) => {
-  const [showPassword, setShowPassword] = useState<boolean>(false);
-  const [focus, setFocus] = useState<boolean>(false);
+export const Input = forwardRef<HTMLInputElement, InputProps>((props, ref) => {
+  const [showPassword, setShowPassword] = useState(false);
+  const [focus, setFocus] = useState(false);
 
   const {
     className,
@@ -31,56 +35,88 @@ export const Input = (props: InputProps) => {
     Icon,
     onChange,
     type = "text",
+    value,
+    defaultValue,
+    error = false,
+    label,
+    onFocus,
+    onBlur,
     ...rest
   } = props;
 
+  // Preserve native onChange if provided in rest (for consumers using native signature)
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     onChange?.(e.target.value);
+    if (typeof (rest as any).onChange === "function") {
+      (rest as any).onChange(e);
+    }
   };
 
-  const toggleShowPassword = () => {
-    setShowPassword((prev) => !prev);
-  };
+  const toggleShowPassword = () => setShowPassword((s) => !s);
 
-  const handleFocus = () => {
+  const handleFocus = (e: FocusEvent<HTMLInputElement>) => {
     setFocus(true);
+    if (typeof onFocus === "function") onFocus(e);
   };
-  const handleBlur = () => {
+
+  const handleBlur = (e: FocusEvent<HTMLInputElement>) => {
     setFocus(false);
+    if (typeof onBlur === "function") onBlur(e);
   };
+
+  const containerClass = cn(style.inputContainer, className, {
+    [style.rounded]: rounded,
+    [style.disabled]: disabled,
+    [style.focus]: focus,
+    [style.error]: error,
+  });
+
+  const inputClass = cn(style.input, {
+    [style.disabled]: disabled,
+    [style.error]: error,
+  });
+
+  // Only pass value when controlled; allow uncontrolled via defaultValue
+  const inputProps: React.InputHTMLAttributes<HTMLInputElement> = {
+    ...rest,
+    disabled,
+    onChange: handleChange,
+    onFocus: handleFocus,
+    onBlur: handleBlur,
+    type: showPassword && type === "password" ? "text" : type,
+    className: inputClass,
+    "aria-invalid": error || undefined,
+  };
+
+  if (value !== undefined) inputProps.value = value;
+  if (defaultValue !== undefined) inputProps.defaultValue = defaultValue;
 
   return (
-    <div
-      className={cn(style.inputContainer, className, {
-        [style.rounded]: rounded,
-        [style.disabled]: disabled,
-        [style.focus]: focus,
-      })}
-    >
-      {Icon}
-      <input
-        {...rest}
-        value={rest.value}
-        disabled={disabled}
-        onChange={handleChange}
-        onFocus={handleFocus}
-        onBlur={handleBlur}
-        type={showPassword && type === "password" ? "text" : type}
-        className={cn(style.input, {
-          [style.disabled]: disabled,
-          [style.rounded]: rounded,
-        })}
-      />
-      {type === "password" && (
-        <Button
-          theme="ghost"
-          type="button"
-          className={style.toggleVisibility}
-          onClick={toggleShowPassword}
-        >
-          {showPassword ? <HideIcon /> : <ShowIcon />}
-        </Button>
+    <div>
+      {label && (
+        <label className={cn(style.label, { [style.error]: error })}>
+          {label}
+        </label>
       )}
+      <div className={containerClass}>
+        {Icon}
+        <input {...inputProps} />
+        {type === "password" && (
+          <Button
+            theme="ghost"
+            type="button"
+            className={style.toggleVisibility}
+            onClick={toggleShowPassword}
+            disabled={disabled}
+            aria-label={showPassword ? "Hide password" : "Show password"}
+          >
+            {showPassword ? <HideIcon /> : <ShowIcon />}
+          </Button>
+        )}
+      </div>
     </div>
   );
-};
+});
+
+Input.displayName = "Input";
+export default Input;
