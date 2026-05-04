@@ -44,12 +44,9 @@ export const Input = forwardRef<HTMLInputElement, InputProps>((props, ref) => {
     ...rest
   } = props;
 
-  // Preserve native onChange if provided in rest (for consumers using native signature)
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     onChange?.(e.target.value);
-    if (typeof (rest as any).onChange === "function") {
-      (rest as any).onChange(e);
-    }
+    if (typeof (rest as any).onChange === "function") (rest as any).onChange(e);
   };
 
   const toggleShowPassword = () => setShowPassword((s) => !s);
@@ -76,7 +73,6 @@ export const Input = forwardRef<HTMLInputElement, InputProps>((props, ref) => {
     [style.error]: error,
   });
 
-  // Only pass value when controlled; allow uncontrolled via defaultValue
   const inputProps: React.InputHTMLAttributes<HTMLInputElement> = {
     ...rest,
     disabled,
@@ -93,11 +89,7 @@ export const Input = forwardRef<HTMLInputElement, InputProps>((props, ref) => {
 
   return (
     <div>
-      {label && (
-        <label className={cn(style.label, { [style.error]: error })}>
-          {label}
-        </label>
-      )}
+      {label && <label className={cn(style.label, { [style.error]: error })}>{label}</label>}
       <div className={containerClass}>
         {Icon}
         <input {...inputProps} />
