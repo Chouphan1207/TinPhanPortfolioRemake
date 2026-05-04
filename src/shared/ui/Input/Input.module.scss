@@ -1,3 +1,5 @@
+// Input.module.scss
+
 // Variables
 $input-padding: 12px 16px;
 $input-gap: 8px;
@@ -33,11 +35,13 @@ $transition-speed: 0.2s;
 
   &.focus {
     @include state(var(--primary-color));
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+
+    box-shadow: 0 4px 16px rgb(0 0 0 / 6%);
   }
 
   &.disabled {
     @include state(var(--gray-200), var(--gray-50));
+
     cursor: not-allowed;
   }
 
@@ -88,7 +92,6 @@ $transition-speed: 0.2s;
   }
 }
 
-/* Toggle visibility button (password) */
 .toggleVisibility {
   display: inline-flex;
   align-items: center;

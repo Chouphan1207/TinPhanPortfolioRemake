@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import type { Meta, StoryObj } from "@storybook/react";
 import { Input } from "./Input";
-import HideIcon from "@/shared/assets/icons/Hide.svg?react";
 import ShowIcon from "@/shared/assets/icons/Show.svg?react";
 
 const meta: Meta<typeof Input> = {
