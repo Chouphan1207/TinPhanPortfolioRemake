@@ -1,16 +1,6 @@
-import React, {
-  forwardRef,
-  useState,
-  type ChangeEvent,
-  type FocusEvent,
-  type InputHTMLAttributes,
-  type ReactNode,
-} from "react";
-import { cn } from "@/shared/lib";
+import React, { forwardRef, type ChangeEvent, type FocusEvent, type InputHTMLAttributes, type ReactNode } from "react";
 import style from "./Input.module.scss";
-import { Button } from "../Button/Button";
-import HideIcon from "@/shared/assets/icons/Hide.svg?react";
-import ShowIcon from "@/shared/assets/icons/Show.svg?react";
+import { cn } from "@/shared/lib";
 
 type HTMLInputProps = Omit<InputHTMLAttributes<HTMLInputElement>, "onChange">;
 
@@ -25,9 +15,6 @@ export interface InputProps extends HTMLInputProps {
 }
 
 export const Input = forwardRef<HTMLInputElement, InputProps>((props, ref) => {
-  const [showPassword, setShowPassword] = useState(false);
-  const [focus, setFocus] = useState(false);
-
   const {
     className,
     disabled = false,
@@ -49,38 +36,23 @@ export const Input = forwardRef<HTMLInputElement, InputProps>((props, ref) => {
     if (typeof (rest as any).onChange === "function") (rest as any).onChange(e);
   };
 
-  const toggleShowPassword = () => setShowPassword((s) => !s);
-
   const handleFocus = (e: FocusEvent<HTMLInputElement>) => {
-    setFocus(true);
     if (typeof onFocus === "function") onFocus(e);
   };
 
   const handleBlur = (e: FocusEvent<HTMLInputElement>) => {
-    setFocus(false);
     if (typeof onBlur === "function") onBlur(e);
   };
 
-  const containerClass = cn(style.inputContainer, className, {
-    [style.rounded]: rounded,
-    [style.disabled]: disabled,
-    [style.focus]: focus,
-    [style.error]: error,
-  });
-
-  const inputClass = cn(style.input, {
-    [style.disabled]: disabled,
-    [style.error]: error,
-  });
-
+  // Build inputProps WITHOUT ref
   const inputProps: React.InputHTMLAttributes<HTMLInputElement> = {
     ...rest,
     disabled,
     onChange: handleChange,
     onFocus: handleFocus,
     onBlur: handleBlur,
-    type: showPassword && type === "password" ? "text" : type,
-    className: inputClass,
+    type,
+    className: cn(style.input, { [style.disabled]: disabled, [style.error]: error }),
     "aria-invalid": error || undefined,
   };
 
@@ -88,23 +60,12 @@ export const Input = forwardRef<HTMLInputElement, InputProps>((props, ref) => {
   if (defaultValue !== undefined) inputProps.defaultValue = defaultValue;
 
   return (
-    <div>
+    <div className={cn(style.inputContainer, className, { [style.rounded]: rounded, [style.disabled]: disabled, [style.error]: error })}>
       {label && <label className={cn(style.label, { [style.error]: error })}>{label}</label>}
-      <div className={containerClass}>
+      <div>
         {Icon}
-        <input {...inputProps} />
-        {type === "password" && (
-          <Button
-            theme="ghost"
-            type="button"
-            className={style.toggleVisibility}
-            onClick={toggleShowPassword}
-            disabled={disabled}
-            aria-label={showPassword ? "Hide password" : "Show password"}
-          >
-            {showPassword ? <HideIcon /> : <ShowIcon />}
-          </Button>
-        )}
+        {/* Pass ref directly here — do NOT include ref inside inputProps */}
+        <input ref={ref} {...inputProps} />
       </div>
     </div>
   );
