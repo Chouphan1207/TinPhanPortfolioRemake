@@ -126,7 +126,7 @@
   background: transparent;
   border: none;
   padding: 1em 1.5em;
-  color: var(--button-bg-hover);
+  color: var(--secondary-color);
   text-transform: uppercase;
   position: relative;
   transition: 0.5s ease;
@@ -148,10 +148,12 @@
   color: var(--secondary-color-light);
   transition-delay: 0.5s;
   border-radius: 0;
+  background-color: var(--button-bg-active);
 }
 
 .btnHover:hover::before {
   width: 100%;
+  background-color: var(--button-bg-active);
 }
 
 .btnHover::after {
@@ -168,7 +170,7 @@
 .btnHover:hover::after {
   height: 100%;
   transition-delay: 0.4s;
-  color: aliceblue;
+  background-color: var(--button-bg-active);
 }
 
 svg {
