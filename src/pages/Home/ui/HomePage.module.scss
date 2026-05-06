@@ -12,6 +12,7 @@
 .content {
   flex: 1;
   padding: var(--space-responsive-3xl) var(--space-responsive-lg);
+  margin-inline: var(--space-responsive-3xl);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -19,17 +20,17 @@
   position: relative;
 
   /* Responsive layout */
-  @media (width <= 992px) {
+  @media (width <=992px) {
     flex-direction: column;
     text-align: center;
     gap: var(--space-responsive-2xl);
   }
 
-  @media (width <= 768px) {
+  @media (width <=768px) {
     padding: var(--space-responsive-2xl) var(--space-responsive-md);
   }
 
-  @media (width <= 480px) {
+  @media (width <=480px) {
     padding: var(--space-responsive-xl) var(--space-responsive-sm);
     gap: var(--space-responsive-lg);
   }
@@ -81,12 +82,12 @@
   margin-bottom: var(--space-responsive-xl);
   color: var(--primary-color);
 
-  @media (width <= 768px) {
+  @media (width <=768px) {
     font-size: var(--font-size-responsive-4xl);
     margin-bottom: var(--space-responsive-lg);
   }
 
-  @media (width <= 480px) {
+  @media (width <=480px) {
     font-size: var(--font-size-responsive-3xl);
     margin-bottom: var(--space-responsive-md);
   }
@@ -99,12 +100,12 @@
   color: var(--text-color);
   opacity: 0.8;
 
-  @media (width <= 768px) {
+  @media (width <=768px) {
     font-size: var(--font-size-responsive-md);
     margin-bottom: var(--space-responsive-xl);
   }
 
-  @media (width <= 480px) {
+  @media (width <=480px) {
     font-size: var(--font-size-responsive-sm);
     margin-bottom: var(--space-responsive-lg);
   }
@@ -117,7 +118,7 @@
   justify-content: center;
   align-items: center;
 
-  @media (width <= 480px) {
+  @media (width <=480px) {
     flex-direction: column;
     align-items: center;
     gap: var(--space-responsive-sm);
@@ -131,15 +132,15 @@
   opacity: 0.95;
   filter: blur(0.5px);
 
-  @media (width <= 992px) {
+  @media (width <=992px) {
     max-width: 300px;
   }
 
-  @media (width <= 768px) {
+  @media (width <=768px) {
     max-width: 250px;
   }
 
-  @media (width <= 480px) {
+  @media (width <=480px) {
     max-width: 200px;
   }
 }
