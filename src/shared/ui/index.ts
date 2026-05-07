@@ -1,13 +1,9 @@
+import { AppIcon } from "./AppIcon/AppIcon";
+import { AppPage } from "./AppPage/AppPage";
 import { Button } from "./Button/Button";
 import { Input } from "./Input/Input";
-import { AppIcon } from "./AppIcon/AppIcon";
-import { Spinner } from "./Spinner/Spinner"
-import { AppPage } from "./AppPage/AppPage";
+import { Spinner } from "./Spinner/Spinner";
 import { Tabs } from "./Tabs/Tabs";
 import Typography from "./Typography/Typography";
-import InfiniteScrollTools from "./InfiniteScrolling/InfiniteScrolling";
 
-
-export {
-    Button, Input, AppIcon, Spinner, AppPage, Tabs, Typography, InfiniteScrollTools
-};
+export { Button, Input, AppIcon, Spinner, AppPage, Tabs, Typography };
