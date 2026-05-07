@@ -3,8 +3,8 @@ import { useTranslation } from "react-i18next";
 import { Footer } from "@/widgets/Footer";
 import { Header } from "@/widgets/Header";
 
-import { BentoGrid } from "@/features/home/Grid/Grid";
-import { InfiniteScrollTools } from "@/features/home/InfiniteScrolling/InfiniteScrolling";
+import { BentoGrid } from "@/features/home/Grid/Grid.tsx";
+import { InfiniteScrollTools } from "@/features/home/InfiniteScrolling/InfiniteScrolling.tsx";
 
 import { bentoGridData } from "@/entities/portfolio";
 

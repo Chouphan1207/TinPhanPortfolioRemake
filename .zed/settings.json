@@ -1,0 +1,8 @@
+{
+  "auto_install_extensions": {
+    "stylelint": true,
+    "mdx": true,
+    "javascript-snippets": true,
+    "mcp-server-playwright": true
+  }
+}
