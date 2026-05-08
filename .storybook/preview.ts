@@ -1,13 +1,19 @@
 import type { Preview } from "@storybook/react-vite";
+import type { Decorator } from "@storybook/react-vite";
+import { createElement } from "react";
+import { StoreProvider } from "../src/app/providers";
 
 import {
   RouterDecorator,
   LanguageDecorator,
-  StoreDecorator,
   ThemeDecorator,
 } from "../src/shared/config/storybook";
 
 import "../src/app/styles/index.scss";
+
+const StoreDecorator: Decorator = (Story) => {
+  return createElement(StoreProvider, null, createElement(Story));
+};
 
 const preview: Preview = {
   globalTypes: {
