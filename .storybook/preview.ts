@@ -3,6 +3,7 @@ import type { Preview } from "@storybook/react-vite";
 import {
   RouterDecorator,
   LanguageDecorator,
+  StoreDecorator,
   ThemeDecorator,
 } from "../src/shared/config/storybook";
 
@@ -53,9 +54,10 @@ const preview: Preview = {
     },
   },
   decorators: [
+    StoreDecorator,
     ThemeDecorator,
     RouterDecorator,
-    // LanguageDecorator, // Temporarily removed for debugging
+    LanguageDecorator,
   ],
 };
 
