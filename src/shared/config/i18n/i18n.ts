@@ -13,11 +13,13 @@ i18n
     react: { useSuspense: false },
     fallbackLng: "en",
     debug: true,
+    ns: ["translation", "login"],
+    defaultNS: "translation",
 
     supportedLngs,
 
     backend: {
-      loadPath: "/locales/{{lng}}/translation.json"
+      loadPath: "/locales/{{lng}}/{{ns}}.json"
     },
 
     detection: {

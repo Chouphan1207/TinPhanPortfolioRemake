@@ -1,3 +1,69 @@
-.title{
-    color: var(--primary-color);
+.page {
+  min-height: calc(100vh - 96px);
+  padding: clamp(24px, 4vw, 48px);
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(20px, 3vw, 48px);
+  align-items: center;
+}
+
+.hero {
+  max-width: 560px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: var(--primary-color-light);
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.title {
+  color: var(--primary-color);
+  font-size: clamp(2rem, 5vw, 3rem);
+  line-height: 1.1;
+  margin: 0;
+}
+
+.subtitle {
+  margin-top: 16px;
+  color: var(--gray-700);
+  max-width: 48ch;
+}
+
+.backLink {
+  margin-top: 20px;
+  display: inline-flex;
+  color: var(--primary-color);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.formWrapper {
+  justify-self: end;
+  width: 100%;
+  max-width: 460px;
+}
+
+.formTitle {
+  margin: 0;
+}
+
+.formDescription {
+  margin: 8px 0 16px;
+  color: var(--gray-700);
+}
+
+@media (width <= 900px) {
+  .page {
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+
+  .formWrapper {
+    justify-self: start;
+  }
 }

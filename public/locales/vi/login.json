@@ -1,3 +1,8 @@
 {
-    "login": "Đăng nhập"
+  "login": "Đăng nhập",
+  "eyebrow": "Chào mừng bạn trở lại",
+  "title": "Truy cập tài khoản để tiếp tục công việc",
+  "subtitle": "Đăng nhập bằng email hoặc số điện thoại để quản lý hồ sơ và cập nhật portfolio của bạn.",
+  "backToHome": "Quay về trang chủ",
+  "formDescription": "Sử dụng thông tin đăng nhập của bạn để tiếp tục."
 }

@@ -1,3 +1,8 @@
 {
-    "login": "Login"
+  "login": "Login",
+  "eyebrow": "Welcome back",
+  "title": "Access your account and continue your work",
+  "subtitle": "Sign in with your email or phone number to manage your profile and keep your portfolio updated.",
+  "backToHome": "Back to home",
+  "formDescription": "Use your credentials to sign in."
 }

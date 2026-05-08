@@ -1,8 +1,34 @@
 {
+  "format_on_save": "on",
+  "formatter": "language_server",
+  "tab_size": 2,
+  "hard_tabs": false,
+  "preferred_line_length": 100,
+  "soft_wrap": "preferred_line_length",
   "auto_install_extensions": {
     "stylelint": true,
     "mdx": true,
     "javascript-snippets": true,
     "mcp-server-playwright": true
+  },
+  "languages": {
+    "TypeScript": {
+      "format_on_save": "on",
+      "tab_size": 2
+    },
+    "TSX": {
+      "format_on_save": "on",
+      "tab_size": 2
+    },
+    "JavaScript": {
+      "format_on_save": "on",
+      "tab_size": 2
+    },
+    "JSON": {
+      "tab_size": 2
+    },
+    "SCSS": {
+      "tab_size": 2
+    }
   }
 }
